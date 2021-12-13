@@ -1,5 +1,6 @@
 import Home from './pages/Home.js';
 import Sidebar from './components/Sidebar.js';
+import Navbar from './components/Navbar.js';
 import { useState, useEffect } from 'react';
 
 const useScroll = () => {
@@ -24,6 +25,7 @@ function App() {
   return (
     <div id="App">
       <Sidebar scroll={scroll} />
+      <Navbar />
       <Home />
     </div>
   );
