@@ -7,18 +7,20 @@ export const Homepage = styled.div`
 `
 
 export const Content = styled.div`
-    margin: 2rem 6rem;
+    margin: 0rem 6rem;
+    padding-top: 1rem;
     position: relative;
     height: 100vh;
 `
 
 export const ExperienceContainter = styled.div`
-    margin: 2rem 6rem;
     padding: 1em 1em;
+    margin: 2rem 0rem;
     position: relative;
     font-size: 1.5rem;
     border-radius: 10px;
     background: #B8B8FF;
+    width: 80%;
 `
 
 export const CompanyHeader = styled.p`
@@ -32,18 +34,19 @@ export const BulletPoints = styled.li`
 
 export const Headline = styled.h1`
     position: absolute;
-    top: 30%;
-    transform: translate(0%, -30%);
+    top: 27%;
+    /* transform: translate(0%, -30%); */
     font-size: 6rem;
     color: #F8F7FF;
     transition: 0.2s;
     margin: 0;
+    font-family: Bubbly;
     
     :hover {
         cursor: default;
         color: #FFD8BE;
         transition: 0.2s ease-in-out;
-    }
+    } 
 `
 
 export const Subtitle = styled.h1`
@@ -52,23 +55,46 @@ export const Subtitle = styled.h1`
 `
 
 export const Header = styled.h1`
-    font-size: 4rem;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    font-size: 3rem;
     color: #F8F7FF;
     transition: 0.2s;
-    margin: 2rem 4rem;
-    text-decoration: underline;
+    /* letter-spacing: 2px; */
+    /* text-decoration: underline; */
     
     :hover {
         cursor: default;
         color: #FFD8BE;
         transition: 0.2s ease-in-out;
     }
+
+    :after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        bottom: -4px;
+        background: white;
+        height: 4px;
+        transition-property: width;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        background: #FFD8BE;
+        width: 100%;
+    }
 `
 
 export const Card = styled.div`
-    margin: 2rem 6rem;
     position: relative;
     height: 22rem;
+    margin: 2rem 0 6rem 0;
 `
 
 export const Image = styled.img`
@@ -91,7 +117,7 @@ export const Info = styled.div`
     right: ${({ position }) => (position === "left" ? "auto" : 0)};
     top: 50%;
     transform: translate(0%, -50%);
-    width: 30rem;
+    width: 35rem;
     text-align: right;
     text-align: ${({ position }) => (position === "left" ? "left" : "right")};
     font-size: 1.5rem;
@@ -99,7 +125,7 @@ export const Info = styled.div`
 `
 
 export const Bio = styled.div`
-    margin: 2rem 15rem;
+    margin: 2rem 0rem;
     position: relative;
     height: 25rem;
 `
@@ -137,12 +163,14 @@ export const Description = styled.p`
     transition: 1s;
     border-radius: 10px;
     background: #B8B8FF;
-    margin: 0;
     padding: .5em .5em;
+    margin: 1rem 0;
 `
 
 export const Tools = styled.div`
-    margin: .5rem 0;
+    margin: 0;
+    font-family: Courier;
+    font-weight: 500;
 `
 
 export const Tool = styled.p`

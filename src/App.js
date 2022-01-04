@@ -2,6 +2,7 @@ import Home from './pages/Home.js';
 import Sidebar from './components/Sidebar.js';
 import Navbar from './components/Navbar.js';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -23,11 +24,11 @@ function App() {
   const scroll = useScroll();
 
   return (
-    <div id="App">
-      <Sidebar scroll={scroll} />
+    <Router>
+      <Sidebar scroll={scroll}/>
       <Navbar />
       <Home />
-    </div>
+    </Router>
   );
 }
 

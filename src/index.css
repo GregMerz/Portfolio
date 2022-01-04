@@ -3,14 +3,42 @@
   src: url('fonts/Dongle-Regular.ttf'); 
 }
 
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: 'Code';
+  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.ttf);
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
 body {
   margin: 0;
-  font-family: 'Bubbly', sans-serif;           
+  font-family: 'Roboto';           
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #9381FF;
-
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {
