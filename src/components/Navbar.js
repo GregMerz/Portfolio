@@ -1,16 +1,18 @@
 import {
     Header,
-    Logo,
     Nav,
     Wrapper,
     Active,
-    HyperLink,
+    Link,
     Span,
     HamburgerMenu
 } from './NavbarElements.js';
 
+
+
 import { useState } from 'react';
-import Apple from '../images/apple.png';
+import Apple from '../images/greg.png';
+import Hamburger from '../images/menu_icon.jpg';
 
 function Navbar() {
     const [visible, setVisibility] = useState(false);
@@ -18,24 +20,42 @@ function Navbar() {
     return (
         <Header>
             <div>
-                <Logo src={ Apple } alt="Logo"></Logo>
+                {/* <Logo to="/" onClick={() => toggleHome()}></Logo> */}
             </div>
 
-            <HamburgerMenu onClick={() => setVisibility(!visible)}></HamburgerMenu>
+            <HamburgerMenu src={ Hamburger } alt='Hello' onClick={() => setVisibility(!visible)}/>
 
             <Nav>
                 <Wrapper visible={ visible } data-visible="false">
                     <Active>
-                        <HyperLink href='/'><Span aria-hidden="true">00</Span>Home</HyperLink>
+                        <Link 
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                        ><Span aria-hidden="true">01</Span>About</Link>
                     </Active>
                     <Active>
-                        <HyperLink href='/'><Span aria-hidden="true">01</Span>Experience</HyperLink>
+                        <Link
+                            to="experience"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                        ><Span aria-hidden="true">02</Span>Experience</Link>
                     </Active>
                     <Active>
-                        <HyperLink href='/'><Span aria-hidden="true">02</Span>Projects</HyperLink>
+                        <Link
+                            to="projects"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                        ><Span aria-hidden="true">03</Span>Projects</Link>
                     </Active>
                     <Active>
-                        <HyperLink href='/'><Span aria-hidden="true">03</Span>Contact</HyperLink>
+                        <Link><Span aria-hidden="true">04</Span>Contact</Link>
                     </Active>
                 </Wrapper>
             </Nav>

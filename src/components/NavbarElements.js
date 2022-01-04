@@ -1,17 +1,20 @@
 import styled from 'styled-components'
-// import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+
+import { Menu } from '../images/menu_icon.jpg';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export const Header = styled.header`
-    /* class="primary-header flex"  */
-    display: fixed;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin: 2rem;
     gap: var(--gap, 1rem);
     align-items: center;
     justify-content: space-between;
-`
-
-export const Logo = styled.img`
-    height: 3rem;
-    margin: 2rem;
+    font-family: Fira Sans;
+    z-index: 20;
 `
 
 export const Nav = styled.nav`
@@ -19,7 +22,6 @@ export const Nav = styled.nav`
 `
 
 export const Wrapper = styled.ul` 
-/* id="primary-navigation" class="primary-navigation flex" */
     display: flex;
     gap: var(--gap, 1rem);
 
@@ -55,16 +57,46 @@ export const Active = styled.li`
 
 `
 
-export const HyperLink = styled.a`
-    /* font-family:  */
+export const Link = styled(LinkS)`
+    display: inline;
+    position: relative;
+    overflow: hidden;
     text-transform: uppercase;
-    text-decoration: none;
     color: white;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    :hover {
+        color: #FFD8BE;
+        transition: 0.2s ease-in-out;
+    }
+
+    :after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        bottom: -3px;
+        background: white;
+        height: 2px;
+        transition-property: width;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        background: #FFD8BE;
+        width: 100%;
+    }
 `
 
 export const Span = styled.span`
-    font-weight: 700;
+    font-family: Courier;
+    font-size: 70%;
+    font-weight: 600;
     margin-inline-end: 0.75em;
 
     @media (min-width: 35em) and (max-width: 55em){
@@ -72,17 +104,16 @@ export const Span = styled.span`
     }
 `
 
-export const HamburgerMenu = styled.button`
+export const HamburgerMenu = styled.img`
     display: none;
 
     @media (max-width: 35em) {
         display: block;
         position: absolute;
         z-index: 9999;
-        background: red;
-        width: 2rem;
-        aspect-ratio: 1;
         top: 2rem;
         right: 2rem;
+        width: 2rem;
+        height: 2rem;
     }
 `
