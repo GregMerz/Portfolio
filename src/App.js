@@ -10,7 +10,7 @@ const useScroll = () => {
     y: 0
   });
   const onScroll = () => {
-    setState({ y: window.scrollY, x: window.scrollX });
+    setState({ y: window.scrollY / window.innerHeight, x: window.scrollX / window.innerWidth });
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <Sidebar scroll={scroll}/>
-      <Navbar />
+      <Navbar scroll={scroll}/>
       <Home />
     </Router>
   );

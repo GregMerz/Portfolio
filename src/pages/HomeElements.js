@@ -7,7 +7,7 @@ export const Homepage = styled.div`
 `
 
 export const Content = styled.div`
-    margin: 0rem 6rem;
+    margin: 0 6rem;
     padding-top: 1rem;
     position: relative;
     height: 100vh;

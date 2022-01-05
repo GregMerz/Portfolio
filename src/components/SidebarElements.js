@@ -11,12 +11,11 @@ export const SidebarContainer = styled.div`
     display: grid;
     top: 2rem;
     left: 0;
-    z-index: 30;
-    background: #9381FF;
+    z-index: 10;
     /* border-right: 3px solid #B8B8FF; */
 
     /* :after {
-        content: "";
+        content: "${({scroll}) => scroll.y}";
         position: absolute;
         right: -20px;
         top: 50%;
@@ -38,85 +37,41 @@ export const SidebarContainer = styled.div`
     } */
 `
 
-export const Logo = styled.img`
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    width: 100%;
-    /* height: 5.25rem; */
-    
-    cursor: pointer;
-    /* background: red; */
-`
-
 export const SidebarWrapper = styled.div`
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
 `
 
-export const SidebarSection = styled(LinkS)`
+export const SidebarLink = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     font-weight: bold;
-    margin: 1.625rem 2.75rem;
+    margin: .25rem 0;
     background: #B8B8FF;
     /* border: 2px solid blue; */
-    border-radius: 100%;
+    border-radius: 0 50px 50px 0;
 
     :hover {
         background: #FFD8BE;
         transition: 0.2s ease-in-out;
+        width: 110%;
     }
 
     :nth-child(1) {
-        grid-row-start: 3;
+        grid-row-start: 7;
     }
 
     :nth-child(2) {
-        grid-row-start: 4;
-    }
-
-    :nth-child(3) {
-        grid-row-start: 5;
-    }
-
-    :nth-child(4) {
-        grid-row-start: 6;
-    }
-`
-
-export const SidebarLink = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    font-weight: bold;
-    margin: .5rem;
-    background: #B8B8FF;
-    /* border: 2px solid blue; */
-    border-radius: 50px;
-
-    :hover {
-        background: #FFD8BE;
-        transition: 0.2s ease-in-out;
-    }
-
-    :nth-child(5) {
         grid-row-start: 8;
     }
 
-    :nth-child(6) {
+    :nth-child(3) {
         grid-row-start: 9;
-    }
-
-    :nth-child(7) {
-        grid-row-start: 10;
     } 
 `
 

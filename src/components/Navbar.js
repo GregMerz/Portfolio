@@ -1,5 +1,6 @@
 import {
     Header,
+    Logo,
     Nav,
     Wrapper,
     Active,
@@ -14,13 +15,13 @@ import { useState } from 'react';
 import Apple from '../images/greg.png';
 import Hamburger from '../images/menu_icon.jpg';
 
-function Navbar() {
+function Navbar({ scroll }) {
     const [visible, setVisibility] = useState(false);
 
     return (
         <Header>
             <div>
-                {/* <Logo to="/" onClick={() => toggleHome()}></Logo> */}
+                <Logo href="/">Greg Merz</Logo>
             </div>
 
             <HamburgerMenu src={ Hamburger } alt='Hello' onClick={() => setVisibility(!visible)}/>
@@ -34,6 +35,10 @@ function Navbar() {
                             duration={500}
                             spy={true}
                             exact="true"
+                            scroll={scroll}
+                            offset={-75}
+                            start={.7}
+                            end={1.7}
                         ><Span aria-hidden="true">01</Span>About</Link>
                     </Active>
                     <Active>
@@ -43,6 +48,10 @@ function Navbar() {
                             duration={500}
                             spy={true}
                             exact="true"
+                            scroll={scroll}
+                            offset={-75}
+                            start={1.7}
+                            end={2.7}
                         ><Span aria-hidden="true">02</Span>Experience</Link>
                     </Active>
                     <Active>
@@ -52,10 +61,18 @@ function Navbar() {
                             duration={500}
                             spy={true}
                             exact="true"
+                            scroll={scroll}
+                            offset={-57}
+                            start={2.7}
+                            end={3.7}
                         ><Span aria-hidden="true">03</Span>Projects</Link>
                     </Active>
                     <Active>
-                        <Link><Span aria-hidden="true">04</Span>Contact</Link>
+                        <Link
+                            scroll={scroll}
+                            start={2588}
+                            end={3000}
+                        ><Span aria-hidden="true">04</Span>Contact</Link>
                     </Active>
                 </Wrapper>
             </Nav>
