@@ -18,18 +18,18 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.a`
-    color: black;
+    color: var(--dark--text);
     font-weight: bold;
     font-size: 22px;
     font-family: Simply Glamorous;
     text-decoration: none;
-    background: #B8B8FF;
+    background: var(--secondary--color);
     border-radius: 0 50px 50px 0;
     padding: 2rem 2rem 2rem 1rem;
 
     :hover {
         font-size: 26px;
-        background: #FFD8BE;
+        background: var(--accent--text);
     }
 `
 
@@ -83,10 +83,10 @@ export const Link = styled(LinkS)`
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    color: ${({scroll, start, end}) => (scroll.y >= start && scroll.y < end) ? "#FFD8BE" : "#F8F7FF"};
+    color: ${({scroll, start, end}) => (scroll.y >= start && scroll.y < end) ? "var(--accent--text)" : "var(--light--text)"};
 
     :hover {
-        color: #FFD8BE;
+        color: var(--accent--text);
         transition: 0.2s ease-in-out;
     }
 
@@ -110,7 +110,7 @@ export const Link = styled(LinkS)`
     :hover:after,
     :focus:after,
     :active:after {
-        background: #FFD8BE;
+        background: var(--accent--text);
         width: 100%;
     }
 `

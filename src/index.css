@@ -33,12 +33,20 @@
   src: url(fonts/Roboto-Regular.ttf);
 }
 
+:root {
+  --primary--color: #9381FF;
+  --secondary--color: #B8B8FF;
+  --dark--text: black;
+  --light--text: #F8F7FF;
+  --accent--text: #FFD8BE;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto';           
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #9381FF;
+  background: var(--primary--color);
   overflow-x: hidden;
 }
 

@@ -36,7 +36,7 @@ function Navbar({ scroll }) {
                             spy={true}
                             exact="true"
                             scroll={scroll}
-                            offset={-75}
+                            offset={0}
                             start={.7}
                             end={1.7}
                         ><Span aria-hidden="true">01</Span>About</Link>
@@ -49,7 +49,7 @@ function Navbar({ scroll }) {
                             spy={true}
                             exact="true"
                             scroll={scroll}
-                            offset={-75}
+                            offset={0}
                             start={1.7}
                             end={2.7}
                         ><Span aria-hidden="true">02</Span>Experience</Link>
@@ -62,7 +62,7 @@ function Navbar({ scroll }) {
                             spy={true}
                             exact="true"
                             scroll={scroll}
-                            offset={-57}
+                            offset={0}
                             start={2.7}
                             end={3.7}
                         ><Span aria-hidden="true">03</Span>Projects</Link>
