@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Dongle';
-  src: url('fonts/Dongle-Regular.ttf'); 
+  src: url('fonts/Dongle-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Fira Sans';
-  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf'); 
+  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf');
 }
 
 @font-face {
   font-family: 'Code';
-  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf'); 
+  src: url('fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf');
 }
 
 @font-face {
@@ -34,16 +34,16 @@
 }
 
 :root {
-  --primary--color: #9381FF;
-  --secondary--color: #B8B8FF;
+  --primary--color: #9381ff;
+  --secondary--color: #b8b8ff;
   --dark--text: black;
-  --light--text: #F8F7FF;
-  --accent--text: #FFD8BE;
+  --light--text: #f8f7ff;
+  --accent--text: #ffd8be;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto';           
+  font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--primary--color);

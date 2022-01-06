@@ -1,35 +1,38 @@
-import Home from './pages/Home.js';
-import Sidebar from './components/Sidebar.js';
-import Navbar from './components/Navbar.js';
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './pages/Home.js'
+import Sidebar from './components/Sidebar.js'
+import Navbar from './components/Navbar.js'
+import { useState, useEffect } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const useScroll = () => {
   const [state, setState] = useState({
     x: 0,
-    y: 0
-  });
+    y: 0,
+  })
   const onScroll = () => {
-    setState({ y: window.scrollY / window.innerHeight, x: window.scrollX / window.innerWidth });
-  };
+    setState({
+      y: window.scrollY / window.innerHeight,
+      x: window.scrollX / window.innerWidth,
+    })
+  }
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
-  return state;
+  return state
 }
 
 function App() {
-  const scroll = useScroll();
+  const scroll = useScroll()
 
   return (
     <Router>
-      <Sidebar scroll={scroll}/>
-      <Navbar scroll={scroll}/>
+      <Sidebar scroll={scroll} />
+      <Navbar scroll={scroll} />
       <Home />
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
