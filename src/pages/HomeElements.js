@@ -18,7 +18,9 @@ export const Content = styled.div`
   height: 100%;
   padding: 0 6rem;
   position: relative;
+  top: 40px;
   justify-items: center;
+  justify-content: center;
 `
 
 export const ExperienceContainter = styled.div`

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
-import { Menu } from '../images/menu_icon.jpg'
+import { Menu } from '../../images/menu_icon.jpg'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 export const Header = styled.header`
@@ -15,6 +15,11 @@ export const Header = styled.header`
   justify-content: space-between;
   font-family: Fira Sans;
   z-index: 20;
+  top: 0rem;
+
+  @media (max-width: 40em) {
+    margin-top: 4rem;
+  }
 `
 
 export const Logo = styled.a`
@@ -78,16 +83,19 @@ export const Link = styled(LinkS)`
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 2px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 0.2s ease-in-out;
     color: ${({ scroll, start, end }) =>
       scroll.y >= start && scroll.y < end
         ? 'var(--accent--text)'
         : 'var(--light--text)'};
+    font-size: ${({ scroll, start, end }) =>
+      scroll.y >= start && scroll.y < end ? '110%' : '100%'};
 
     :hover {
         color: var(--accent--text);
         transition: 0.2s ease-in-out;
+        font-size: 110%;
     }
 
     /* :before {
@@ -126,16 +134,19 @@ export const Span = styled.span`
   }
 `
 
-export const HamburgerMenu = styled.img`
+export const HamburgerMenuWrapper = styled.div`
   display: none;
 
   @media (max-width: 40em) {
     display: block;
     position: absolute;
-    z-index: 9999;
-    top: 2rem;
     right: 2rem;
-    width: 2rem;
-    height: 2rem;
+    z-index: 9999;
+    font-size: 25px;
+    color: black;
   }
 `
+
+export const MenuIcon = styled(FaBars)``
+
+export const CloseIcon = styled(FaTimes)``

@@ -4,10 +4,10 @@ import {
   SidebarWrapper,
   SidebarImg,
 } from './SidebarElements'
-import LinkedIn from '../images/LinkedIn.png'
-import GitHub from '../images/Github.png'
-import Email from '../images/Email.png'
-import Signature from '../images/signature.png'
+import LinkedIn from '../../images/LinkedIn.png'
+import GitHub from '../../images/Github.png'
+import Email from '../../images/Email.png'
+import Signature from '../../images/signature.png'
 
 import { animateScroll as scroll } from 'react-scroll'
 

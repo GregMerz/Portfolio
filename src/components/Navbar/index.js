@@ -6,15 +6,21 @@ import {
   Active,
   Link,
   Span,
-  HamburgerMenu,
+  HamburgerMenuWrapper,
+  MenuIcon,
+  CloseIcon,
 } from './NavbarElements.js'
 
 import { useState } from 'react'
-import Apple from '../images/greg.png'
-import Hamburger from '../images/menu_icon.jpg'
+import Apple from '../../images/greg.png'
+import Hamburger from '../../images/menu_icon.jpg'
 
 function Navbar({ scroll }) {
   const [visible, setVisibility] = useState(false)
+
+  const toggle = () => {
+    setVisibility(!visible)
+  }
 
   return (
     <Header>
@@ -22,11 +28,9 @@ function Navbar({ scroll }) {
         <Logo href="/">Greg Merz</Logo>
       </div>
 
-      <HamburgerMenu
-        src={Hamburger}
-        alt="Hello"
-        onClick={() => setVisibility(!visible)}
-      />
+      <HamburgerMenuWrapper onClick={toggle}>
+        {visible ? <CloseIcon /> : <MenuIcon />}
+      </HamburgerMenuWrapper>
 
       <Nav>
         <Wrapper visible={visible} data-visible="false">

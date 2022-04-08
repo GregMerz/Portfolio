@@ -19,18 +19,103 @@ import {
   Homepage,
   Page,
   Container,
+  Rotate,
 } from './HomeElements'
 
-import { Span } from '../components/NavbarElements.js'
+import { Span } from '../components/Navbar/NavbarElements.js'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 import ChessImg from '../images/HoveringOverPieces2.png'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
+import reactDom from 'react-dom'
+import { faCalculator } from '@fortawesome/free-solid-svg-icons'
 
-function Home() {
+const characters = 'Hello, my name is'
+const characters1 = 'Hello, my name is'
+const arc = 180
+const radius = 150
+const degree = arc / (characters.length - 1)
+
+function Home({ scroll }) {
   return (
     <Homepage>
       <Page num_pages={1}>
+        <Content>
+          <div
+            style={{
+              position: 'fixed',
+              left: '37.5%',
+              transform: `rotate(${scroll.y < 0.8 ? scroll.y * 220 : 180}deg)`,
+              background: 'red',
+              aspectRatio: '1',
+              width: '150px',
+              borderRadius: '50%',
+              border: '150px solid black',
+              opacity: `${scroll.y > 0.98 ? 0 : 1}`,
+            }}
+          >
+            <h2>
+              {characters.split('').map((char, i) => (
+                <span
+                  key={`heading-span-${i}`}
+                  style={{
+                    height: '175px',
+                    width: '15px',
+                    transform: `rotate(${8 * i - 64}deg)`,
+                    transformOrigin: `bottom center`,
+                    position: 'absolute',
+                    fontFamily: 'courier',
+                    top: `-105px`,
+                    left: '65px',
+                    color: 'white',
+                    // background: 'blue',
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </h2>
+
+            <h1
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                margin: '0',
+                color: 'white',
+                fontFamily: 'Simply Glamorous',
+                width: 'max-content',
+                fontSize: '4rem',
+              }}
+            >
+              Greg Merz
+            </h1>
+            {/* <h2>
+              {characters1.split('').map((char, i) => (
+                <span
+                  key={`heading-span-${i}`}
+                  style={{
+                    height: `${radius}px`,
+                    transform: `rotate(${degree * i - arc / 2}deg)`,
+                    transformOrigin: `0 ${-radius}px 0`,
+                    position: 'absolute',
+                    fontFamily: 'courier',
+                    bottom: '0',
+                    left: '150px',
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </h2> */}
+          </div>
+        </Content>
+      </Page>
+
+      {/* <Page num_pages={1}>
         <Content>
           <Container>
             <Headline>
@@ -39,7 +124,7 @@ function Home() {
             </Headline>
           </Container>
         </Content>
-      </Page>
+      </Page> */}
 
       <Page id="about" num_pages={1}>
         <Content>
