@@ -52,21 +52,25 @@ export const SidebarLink = styled.a`
   align-items: center;
   justify-content: center;
   transition: 0.2s ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-weight: bold;
   margin: 0.75rem 0;
-  background: var(--secondary--color);
+  background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f);
   border-radius: 0 50px 50px 0;
   height: 4rem;
+  border-bottom: 5px solid var(--shadow--color);
+  border-right: 5px solid var(--shadow--color);
+  cursor: none;
 
   :hover {
-    background: var(--accent--text);
+    /* background: var(--accent--text); */
+    filter: brightness(110%);
     transition: 0.2s ease-in-out;
     width: 110%;
   }
 `
 
 export const SidebarImg = styled.img`
-  cursor: pointer;
+  /* cursor: pointer; */
   width: 30%;
 `

@@ -30,8 +30,9 @@ export const ExperienceContainter = styled.div`
   position: relative;
   font-size: 1.5rem;
   border-radius: 10px;
-  background: var(--secondary--color);
+  background: var(--bubble--color);
   width: 80%;
+  border: 2px solid var(--dark--text);
 `
 
 export const CompanyHeader = styled.p`
@@ -55,7 +56,7 @@ export const Headline = styled.h1`
   font-family: Bubbly;
 
   :hover {
-    cursor: default;
+    /* cursor: default; */
     color: var(--accent--text);
     transition: 0.2s ease-in-out;
   }
@@ -71,11 +72,16 @@ export const Header = styled.h1`
   position: relative;
   overflow: hidden;
   font-size: 3rem;
-  color: var(--light--text);
+  color: var(--bold--dark--text);
   transition: 0.2s;
+  /* background: #74ccb1; */
+  border-radius: 50px 50px 50px 0%;
+  padding: 0.25rem;
+  font-family: 'Fira Sans';
+  letter-spacing: 1px;
 
   :hover {
-    cursor: default;
+    /* cursor: default; */
     color: var(--accent--text);
     transition: 0.2s ease-in-out;
   }
@@ -86,7 +92,7 @@ export const Header = styled.h1`
     left: 0;
     width: 0;
     bottom: -4px;
-    background: var(--light--text);
+    background: var(--accent--text);
     height: 4px;
     transition-property: width;
     transition-duration: 0.2s;
@@ -148,7 +154,7 @@ export const Headshot = styled.img`
   right: 0;
   top: 50%;
   transform: translate(0%, -50%);
-  border: 10px solid var(--primary--color);
+  border: 2px solid var(--dark--text);
 `
 
 export const About = styled.p`
@@ -158,8 +164,9 @@ export const About = styled.p`
   height: calc(100% - 1em);
   padding: 0.5em 0 0 0.5em;
   font-size: 1.5rem;
-  background: var(--secondary--color);
+  background: var(--bubble--color);
   border-radius: 10px;
+  border: 2px solid var(--dark--text);
 `
 
 export const Skills = styled.p``
@@ -167,23 +174,51 @@ export const Skills = styled.p``
 export const Title = styled.h2`
   font-size: 3rem;
   margin: 0;
+  color: var(--bold--dark--text);
+  font-family: 'Fira Sans';
+  letter-spacing: 1px;
 `
 
 export const Description = styled.p`
   transition: 1s;
   border-radius: 10px;
-  background: var(--secondary--color);
+  background: var(--bubble--color);
+  border: 2px solid var(--dark--text);
   padding: 0.5em 0.5em;
   margin: 1rem 0;
+  color: var(--dark--text);
 `
 
 export const Tools = styled.div`
   margin: 0;
   font-family: Courier;
   font-weight: 500;
+  color: var(--bold--dark--text);
 `
 
 export const Tool = styled.p`
   display: inline;
   padding: 0 0.5em;
+`
+
+export const Record = styled.div`
+  position: fixed;
+  left: 37.5%;
+  transform: rotate(
+    ${({ scroll }) =>
+      scroll.y < 0.8 * window.innerHeight
+        ? (scroll.y * 220) / window.innerHeight
+        : 180}deg
+  );
+  opacity: ${({ scroll }) => (scroll.y > 0.98 * window.innerHeight ? 0 : 1)};
+  background: linear-gradient(0.25turn, #db9eb1, #e27d5f, #db9eb1);
+  aspect-ratio: 1;
+  width: 150px;
+  border-radius: 50%;
+  border: 150px solid black;
+
+  :hover {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
+  }
 `

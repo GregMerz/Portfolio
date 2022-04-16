@@ -20,13 +20,14 @@ import {
   Page,
   Container,
   Rotate,
+  Record,
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ChessImg from '../images/HoveringOverPieces2.png'
+import ChessImg from '../images/HoveringOverPieces.png'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
 import reactDom from 'react-dom'
@@ -43,19 +44,7 @@ function Home({ scroll }) {
     <Homepage>
       <Page num_pages={1}>
         <Content>
-          <div
-            style={{
-              position: 'fixed',
-              left: '37.5%',
-              transform: `rotate(${scroll.y < 0.8 ? scroll.y * 220 : 180}deg)`,
-              background: 'red',
-              aspectRatio: '1',
-              width: '150px',
-              borderRadius: '50%',
-              border: '150px solid black',
-              opacity: `${scroll.y > 0.98 ? 0 : 1}`,
-            }}
-          >
+          <Record scroll={scroll}>
             <h2>
               {characters.split('').map((char, i) => (
                 <span
@@ -111,7 +100,7 @@ function Home({ scroll }) {
                 </span>
               ))}
             </h2> */}
-          </div>
+          </Record>
         </Content>
       </Page>
 

@@ -23,18 +23,21 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.a`
-  color: var(--dark--text);
+  color: black;
   font-weight: bold;
   font-size: 22px;
   font-family: Simply Glamorous;
   text-decoration: none;
-  background: var(--secondary--color);
+  background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f);
   border-radius: 0 50px 50px 0;
   padding: 2rem 2rem 2rem 1rem;
+  border-bottom: 5px solid var(--shadow--color);
+  border-right: 5px solid var(--shadow--color);
 
   :hover {
+    cursor: none;
     font-size: 26px;
-    background: var(--accent--text);
+    filter: brightness(110%);
   }
 `
 
@@ -48,8 +51,10 @@ export const Wrapper = styled.ul`
   padding: 0;
   margin: 0;
   border-radius: 50px 0 0 50px;
-
-  background: hsl(0 0% 100% / 0.1);
+  /* border-top: 3px solid #abccd8; */
+  border-bottom: 7px solid var(--shadow--color);
+  border-left: 7px solid var(--shadow--color);
+  background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color));
   backdrop-filter: blur(1rem);
 
   @media (max-width: 40em) {
@@ -86,14 +91,18 @@ export const Link = styled(LinkS)`
     /* cursor: pointer; */
     transition: 0.2s ease-in-out;
     color: ${({ scroll, start, end }) =>
-      scroll.y >= start && scroll.y < end
-        ? 'var(--accent--text)'
+      scroll.y >= start * window.innerHeight &&
+      scroll.y < end * window.innerHeight
+        ? 'var(--bright--blue)'
         : 'var(--light--text)'};
     font-size: ${({ scroll, start, end }) =>
-      scroll.y >= start && scroll.y < end ? '110%' : '100%'};
+      scroll.y >= start * window.innerHeight &&
+      scroll.y < end * window.innerHeight
+        ? '110%'
+        : '100%'};
 
     :hover {
-        color: var(--accent--text);
+        color: var(--bright--green);
         transition: 0.2s ease-in-out;
         font-size: 110%;
     }
@@ -118,7 +127,7 @@ export const Link = styled(LinkS)`
     :hover:after,
     :focus:after,
     :active:after {
-        background: var(--accent--text);
+        background: linear-gradient(var(--bright--green),var(--bright--blue),var(--bright--blue),var(--bright--blue),var(--bright--green));
         width: 100%;
     }
 `
