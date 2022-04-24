@@ -28,7 +28,8 @@ export const Logo = styled.a`
   font-size: 22px;
   font-family: Simply Glamorous;
   text-decoration: none;
-  background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f);
+  /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
+  background: #ffce32;
   border-radius: 0 50px 50px 0;
   padding: 2rem 2rem 2rem 1rem;
   border-bottom: 5px solid var(--shadow--color);
@@ -54,8 +55,11 @@ export const Wrapper = styled.ul`
   /* border-top: 3px solid #abccd8; */
   border-bottom: 7px solid var(--shadow--color);
   border-left: 7px solid var(--shadow--color);
-  background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color));
+  /* background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color)); */
+  background: #844a31;
+
   backdrop-filter: blur(1rem);
+  opacity: 0.98;
 
   @media (max-width: 40em) {
     --gap: 3em;
@@ -93,7 +97,7 @@ export const Link = styled(LinkS)`
     color: ${({ scroll, start, end }) =>
       scroll.y >= start * window.innerHeight &&
       scroll.y < end * window.innerHeight
-        ? 'var(--bright--blue)'
+        ? 'var(--bright--green)'
         : 'var(--light--text)'};
     font-size: ${({ scroll, start, end }) =>
       scroll.y >= start * window.innerHeight &&

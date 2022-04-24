@@ -14,13 +14,9 @@ export const Page = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  align-items: center;
   height: 100%;
-  padding: 0 6rem;
+  padding: 4rem 6rem;
   position: relative;
-  top: 40px;
-  justify-items: center;
-  justify-content: center;
 `
 
 export const ExperienceContainter = styled.div`
@@ -74,8 +70,6 @@ export const Header = styled.h1`
   font-size: 3rem;
   color: var(--bold--dark--text);
   transition: 0.2s;
-  /* background: #74ccb1; */
-  border-radius: 50px 50px 50px 0%;
   padding: 0.25rem;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
@@ -221,4 +215,41 @@ export const Record = styled.div`
     transform: rotate(90deg);
     transition: 0.3s ease-in-out;
   }
+`
+// transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
+export const CurvedLetters = styled.h2`
+  transform: rotate(${({ i, degree, arc }) => -(degree * i - arc / 2)}deg)
+    translate(0, ${({ radius }) => radius}px);
+  transform-origin: top center;
+  position: absolute;
+  font-family: courier;
+  color: white;
+  margin: 0;
+`
+
+export const TimeLine = styled.div`
+  position: relative;
+  margin-inline: 15rem;
+  top: 20%;
+  left: 0;
+  translate: transform(0, -20%);
+  height: 60%;
+  width: 50px;
+  background: green;
+  justify-content: center;
+
+  :before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: black;
+  }
+`
+
+export const Center = styled.div`
+  top: 0;
+  left: 0;
 `

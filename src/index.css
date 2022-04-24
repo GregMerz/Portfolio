@@ -41,15 +41,17 @@
 :root {
   --bright--green: #0ff5be;
   --bright--blue: #a7e1d1;
-  --primary--color: linear-gradient(
+  /* --primary--color: linear-gradient(
     var(--bright--green),
     var(--bright--blue),
     var(--bright--green),
     var(--bright--blue),
     var(--bright--green)
-  );
+  ); */
+  --primary--color: #64e1ff;
   --secondary--color: #db9eb1;
-  --bubble--color: #88d7ce;
+  /* --bubble--color: #88d7ce; */
+  --bubble--color: #65b754;
   --bold--dark--text: #2c4644;
   --dark--text: #255f5f;
   --light--text: #ffffff;

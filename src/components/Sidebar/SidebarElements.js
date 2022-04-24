@@ -55,7 +55,8 @@ export const SidebarLink = styled.a`
   /* cursor: pointer; */
   font-weight: bold;
   margin: 0.75rem 0;
-  background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f);
+  /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
+  background: #eaeaea;
   border-radius: 0 50px 50px 0;
   height: 4rem;
   border-bottom: 5px solid var(--shadow--color);
