@@ -53,13 +53,12 @@ export const Wrapper = styled.ul`
   margin: 0;
   border-radius: 50px 0 0 50px;
   /* border-top: 3px solid #abccd8; */
-  border-bottom: 7px solid var(--shadow--color);
-  border-left: 7px solid var(--shadow--color);
+  /* border-bottom: 7px solid var(--shadow--color);
+  border-left: 7px solid var(--shadow--color); */
   /* background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color)); */
-  /* background: #844a31; */
+  background: rgba(0, 0, 0, .105);
 
   backdrop-filter: blur(1rem);
-  opacity: 0.98;
 
   @media (max-width: 40em) {
     --gap: 3em;
@@ -94,11 +93,11 @@ export const Link = styled(LinkS)`
     letter-spacing: 2px;
     /* cursor: pointer; */
     transition: 0.2s ease-in-out;
-    color: ${({ scroll, start, end }) =>
+    /* color: ${({ scroll, start, end }) =>
       scroll.y >= start * window.innerHeight &&
       scroll.y < end * window.innerHeight
         ? 'var(--bright--green)'
-        : 'black'};
+        : 'black'}; */
     font-size: ${({ scroll, start, end }) =>
       scroll.y >= start * window.innerHeight &&
       scroll.y < end * window.innerHeight
@@ -106,7 +105,7 @@ export const Link = styled(LinkS)`
         : '100%'};
 
     :hover {
-        color: var(--bright--green);
+        /* color: var(--bright--green); */
         transition: 0.2s ease-in-out;
         font-size: 110%;
     }
@@ -121,7 +120,7 @@ export const Link = styled(LinkS)`
         left: 0;
         width: 0;
         bottom: -3px;
-        background: white;
+        background: black;
         height: 2px;
         transition-property: width;
         transition-duration: 0.2s;
@@ -131,7 +130,7 @@ export const Link = styled(LinkS)`
     :hover:after,
     :focus:after,
     :active:after {
-        background: linear-gradient(var(--bright--green),var(--bright--blue),var(--bright--blue),var(--bright--blue),var(--bright--green));
+        background: black;
         width: 100%;
     }
 `

@@ -21,14 +21,11 @@ export const Content = styled.div`
 
 export const ExperienceContainter = styled.div`
   padding: 1em 1em;
-  color: var(--dark--text);
   margin: 2rem 0rem;
   position: relative;
   font-size: 1.5rem;
   border-radius: 10px;
-  background: var(--bubble--color);
   width: 80%;
-  border: 2px solid var(--dark--text);
 `
 
 export const CompanyHeader = styled.p`
@@ -46,14 +43,12 @@ export const Container = styled.div`
 
 export const Headline = styled.h1`
   font-size: 6rem;
-  color: var(--light--text);
   transition: 0.2s;
   margin: 0;
   font-family: Bubbly;
 
   :hover {
     /* cursor: default; */
-    color: var(--accent--text);
     transition: 0.2s ease-in-out;
   }
 `
@@ -68,7 +63,6 @@ export const Header = styled.h1`
   position: relative;
   overflow: hidden;
   font-size: 3rem;
-  color: var(--bold--dark--text);
   transition: 0.2s;
   padding: 0.25rem;
   font-family: 'Fira Sans';
@@ -76,7 +70,6 @@ export const Header = styled.h1`
 
   :hover {
     /* cursor: default; */
-    color: var(--accent--text);
     transition: 0.2s ease-in-out;
   }
 
@@ -86,7 +79,6 @@ export const Header = styled.h1`
     left: 0;
     width: 0;
     bottom: -4px;
-    background: var(--accent--text);
     height: 4px;
     transition-property: width;
     transition-duration: 0.2s;
@@ -96,7 +88,6 @@ export const Header = styled.h1`
   :hover:after,
   :focus:after,
   :active:after {
-    background: var(--accent--text);
     width: 100%;
   }
 `
@@ -123,7 +114,6 @@ export const Image = styled.img`
 
 export const Info = styled.div`
   position: absolute;
-  color: var(--dark--text);
   left: ${({ position }) => (position === 'left' ? 0 : 'auto')};
   right: ${({ position }) => (position === 'left' ? 'auto' : 0)};
   top: 50%;
@@ -148,19 +138,15 @@ export const Headshot = styled.img`
   right: 0;
   top: 50%;
   transform: translate(0%, -50%);
-  border: 2px solid var(--dark--text);
 `
 
 export const About = styled.p`
   position: relative;
-  color: var(--dark--text);
   width: 80%;
   height: calc(100% - 1em);
   padding: 0.5em 0 0 0.5em;
   font-size: 1.5rem;
-  background: var(--bubble--color);
   border-radius: 10px;
-  border: 2px solid var(--dark--text);
 `
 
 export const Skills = styled.p``
@@ -168,7 +154,6 @@ export const Skills = styled.p``
 export const Title = styled.h2`
   font-size: 3rem;
   margin: 0;
-  color: var(--bold--dark--text);
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 `
@@ -176,18 +161,14 @@ export const Title = styled.h2`
 export const Description = styled.p`
   transition: 1s;
   border-radius: 10px;
-  background: var(--bubble--color);
-  border: 2px solid var(--dark--text);
   padding: 0.5em 0.5em;
   margin: 1rem 0;
-  color: var(--dark--text);
 `
 
 export const Tools = styled.div`
   margin: 0;
   font-family: Courier;
   font-weight: 500;
-  color: var(--bold--dark--text);
 `
 
 export const Tool = styled.p`
@@ -218,15 +199,7 @@ export const Record = styled.div`
   }
 `
 // transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
-export const CurvedLetters = styled.h2`
-  transform: rotate(${({ i, degree, arc }) => -(degree * i - arc / 2)}deg)
-    translate(0, ${({ radius }) => radius}px);
-  transform-origin: top center;
-  position: absolute;
-  font-family: courier;
-  color: white;
-  margin: 0;
-`
+
 
 export const TimeLine = styled.div`
   position: relative;

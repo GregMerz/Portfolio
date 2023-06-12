@@ -53,7 +53,6 @@ export const SidebarLink = styled.a`
   justify-content: center;
   transition: 0.2s ease-in-out;
   /* cursor: pointer; */
-  font-weight: bold;
   margin: 0.75rem 0;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
   background: var(--primary--color);
@@ -68,7 +67,7 @@ export const SidebarLink = styled.a`
 
   :hover {
     /* background: var(--accent--text); */
-    filter: brightness(110%);
+    /* filter: brightness(110%); */
     transition: 0.2s ease-in-out;
     width: 110%;
   }
