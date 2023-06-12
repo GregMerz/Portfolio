@@ -10,13 +10,18 @@ export const Page = styled.div`
     num_pages !== 'auto' ? num_pages * 100 + 'vh' : 'auto'};
   padding-block: ${({ num_pages }) => (num_pages === 'auto' ? '5.5rem' : '0')};
   position: relative;
+  display: block;
 `
 
 export const Content = styled.div`
-  display: flex;
+  display: block;
   height: 100%;
-  padding: 0 6rem;
+  padding: 148px 0 3rem 0;
+  margin: 0 148px 0 3rem;
   position: relative;
+  /* -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;  */
+  box-sizing: border-box; 
 `
 
 export const ExperienceContainter = styled.div`
@@ -59,14 +64,15 @@ export const Subtitle = styled.h1`
 `
 
 export const Header = styled.h1`
-  display: inline;
+  display: inline-block;
   position: relative;
   overflow: hidden;
   font-size: 3rem;
   transition: 0.2s;
-  padding: 0.25rem;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
+  margin: 2rem;
+  padding: 2rem;
 
   :hover {
     /* cursor: default; */
@@ -200,6 +206,17 @@ export const Record = styled.div`
 `
 // transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
 
+export const SignatureName = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+`
 
 export const TimeLine = styled.div`
   position: relative;

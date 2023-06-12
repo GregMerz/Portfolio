@@ -23,13 +23,13 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.a`
-  color: var(--primary--color);
+  color: var(--secondary--color);
   font-weight: bold;
   font-size: 22px;
   font-family: Simply Glamorous;
   text-decoration: none;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: var(--secondary--color);
+  background: rgba(0, 0, 0, .12);
   border-radius: 0 50px 50px 0;
   padding: 2rem 2rem 2rem 1rem;
   border-bottom: 5px solid var(--shadow--color);
@@ -38,7 +38,8 @@ export const Logo = styled.a`
   :hover {
     cursor: none;
     font-size: 26px;
-    filter: brightness(110%);
+    background: rgba(0, 0, 0, .14);
+    /* filter: brightness(110%); */
   }
 `
 
@@ -79,15 +80,41 @@ export const Wrapper = styled.ul`
   @media (min-width: 40em) {
     --gap: clamp(1.5rem, 5vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3em, 8vw, 10rem);
+    padding-inline: clamp(1.5em, 4vw, 5rem);
   }
 `
 
-export const Active = styled.li``
+export const Active = styled.li`
+  position: relative;
+  width: 10rem;
+  height: 20px;
+
+  /* :after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        bottom: -3px;
+        background: black;
+        height: 2px;
+        transition-property: width;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        background: black;
+        width: 100%;
+    } */
+`
 
 export const Link = styled(LinkS)`
     display: inline;
-    position: relative;
+    position: absolute;
+    text-align: center;
+    width: 100%;
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -113,26 +140,6 @@ export const Link = styled(LinkS)`
     /* :before {
         content: "${({ scroll }) => scroll.y}"
     } */
-
-    :after {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 0;
-        bottom: -3px;
-        background: black;
-        height: 2px;
-        transition-property: width;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-out;
-    }
-
-    :hover:after,
-    :focus:after,
-    :active:after {
-        background: black;
-        width: 100%;
-    }
 `
 
 export const Span = styled.span`

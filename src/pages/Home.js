@@ -14,6 +14,7 @@ import {
   Homepage,
   Page,
   Container,
+  SignatureName,
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
@@ -32,8 +33,13 @@ function Home({ scroll }) {
   return (
     <Homepage>
       <Page num_pages={1}>
+        <SignatureName>
+          Greg Merz
+        </SignatureName>
         <Content>
-            
+          <Header>
+            Hello, my name is
+          </Header>
         </Content>
       </Page>
 

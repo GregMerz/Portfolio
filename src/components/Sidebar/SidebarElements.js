@@ -55,10 +55,10 @@ export const SidebarLink = styled.a`
   /* cursor: pointer; */
   margin: 0.75rem 0;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: var(--primary--color);
-  border-top: 3px solid black;
+  background: rgba(0, 0, 0, .12);;
+  /* border-top: 3px solid black;
   border-right: 3px solid black;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid black; */
   border-radius: 0 50px 50px 0;
   height: 4rem;
   /* border-bottom: 5px solid var(--shadow--color);
@@ -70,6 +70,7 @@ export const SidebarLink = styled.a`
     /* filter: brightness(110%); */
     transition: 0.2s ease-in-out;
     width: 110%;
+    background: rgba(0, 0, 0, .14);
   }
 `
 
