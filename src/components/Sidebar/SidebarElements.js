@@ -56,11 +56,14 @@ export const SidebarLink = styled.a`
   font-weight: bold;
   margin: 0.75rem 0;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: #eaeaea;
+  background: var(--primary--color);
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
   border-radius: 0 50px 50px 0;
   height: 4rem;
-  border-bottom: 5px solid var(--shadow--color);
-  border-right: 5px solid var(--shadow--color);
+  /* border-bottom: 5px solid var(--shadow--color);
+  border-right: 5px solid var(--shadow--color); */
   cursor: none;
 
   :hover {

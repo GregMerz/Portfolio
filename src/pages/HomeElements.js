@@ -15,7 +15,7 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: flex;
   height: 100%;
-  padding: 4rem 6rem;
+  padding: 0 6rem;
   position: relative;
 `
 
@@ -197,6 +197,7 @@ export const Tool = styled.p`
 
 export const Record = styled.div`
   position: fixed;
+  bottom: 28.8%;
   left: 37.5%;
   transform: rotate(
     ${({ scroll }) =>
@@ -247,9 +248,4 @@ export const TimeLine = styled.div`
     transform: translate(-50%, 0);
     background: black;
   }
-`
-
-export const Center = styled.div`
-  top: 0;
-  left: 0;
 `

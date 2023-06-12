@@ -20,12 +20,11 @@ import {
   Record,
   CurvedLetters,
   TimeLine,
-  Center,
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
 import React from 'react'
-import ChessImg from '../images/HoveringOverPieces.png'
+import ChessImg from '../images/HoveringOverPieces.jpeg'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
 
@@ -40,7 +39,6 @@ function Home({ scroll }) {
     <Homepage>
       <Page num_pages={1}>
         <Content>
-          <Center>
             <Record scroll={scroll}>
               <h2>
                 {characters.split('').map((char, i) => (
@@ -100,7 +98,6 @@ function Home({ scroll }) {
                 ))}
               </div>
             </Record>
-          </Center>
         </Content>
       </Page>
 

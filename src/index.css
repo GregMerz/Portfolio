@@ -48,8 +48,8 @@
     var(--bright--blue),
     var(--bright--green)
   ); */
-  --primary--color: #64e1ff;
-  --secondary--color: #db9eb1;
+  --primary--color: white;
+  --secondary--color: black;
   /* --bubble--color: #88d7ce; */
   --bubble--color: #65b754;
   --bold--dark--text: #2c4644;
