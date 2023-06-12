@@ -23,22 +23,23 @@ import ChessImg from '../images/HoveringOverPieces.jpeg'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
 
-const characters = 'Hello, my name is'
-const characters1 = 'Hello, my name is'
-const arc = 100
-const radius = 175
-const degree = arc / (characters.length - 1)
-
 function Home({ scroll }) {
   return (
     <Homepage>
       <Page num_pages={1}>
-        <SignatureName>
-          Greg Merz
-        </SignatureName>
         <Content>
           <Header>
-            Hello, my name is
+            <div 
+              style={{
+                position: `relative`,
+                top: `-6rem`,
+                left: `5rem`,
+              }}
+            >
+              Hello, my name is
+              <SignatureName>Greg Merz</SignatureName>
+            </div>
+            <Image src={Profile} alt="quarantine" position="left"></Image> 
           </Header>
         </Content>
       </Page>

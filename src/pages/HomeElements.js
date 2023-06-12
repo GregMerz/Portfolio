@@ -63,16 +63,19 @@ export const Subtitle = styled.h1`
   margin: 0;
 `
 
-export const Header = styled.h1`
-  display: inline-block;
+export const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   font-size: 3rem;
   transition: 0.2s;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
-  margin: 2rem;
-  padding: 2rem;
+  /* margin: 2rem;
+  padding: 2rem 8rem; */
 
   :hover {
     /* cursor: default; */
@@ -107,13 +110,13 @@ export const Card = styled.div`
 export const Image = styled.img`
   position: absolute;
   border-radius: 10px;
-  height: 100%;
-  opacity: 70%;
+  height: 70%;
+  filter: brightness(75%);
   transition: 1s;
   right: ${({ position }) => (position === 'left' ? 0 : 'auto')};
 
   :hover {
-    opacity: 100%;
+    filter: brightness(90%);
     transition: 1s;
   }
 `
@@ -207,15 +210,7 @@ export const Record = styled.div`
 // transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
 
 export const SignatureName = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
+  font-size: 120px;
 `
 
 export const TimeLine = styled.div`

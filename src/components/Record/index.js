@@ -2,6 +2,12 @@ import {
     CurvedLetters
 } from './RecordElements.js'
 
+const characters = 'Hello, my name is'
+const characters1 = 'Hello, my name is'
+const arc = 100
+const radius = 175
+const degree = arc / (characters.length - 1)
+
 function Record({scroll}){
     <>
         <h2>
