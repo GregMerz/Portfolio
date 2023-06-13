@@ -8,7 +8,7 @@ export const Page = styled.div`
   padding-left: 100px;
   height: ${({ num_pages }) =>
     num_pages !== 'auto' ? num_pages * 100 + 'vh' : 'auto'};
-  padding-block: ${({ num_pages }) => (num_pages === 'auto' ? '5.5rem' : '0')};
+  padding-block: ${({ num_pages }) => (num_pages === 'auto' ? '0' : '0')};
   position: relative;
   display: block;
 `
@@ -16,7 +16,7 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding: 148px 0 3rem 0;
+  padding: 148px 3rem 3rem 3rem;
   margin: 0 148px 0 3rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
@@ -44,6 +44,7 @@ export const BulletPoints = styled.li`
 
 export const Container = styled.div`
   width: 100%;
+  height: 100%;
 `
 
 export const Headline = styled.h1`
@@ -62,11 +63,18 @@ export const Subtitle = styled.h1`
   font-size: 14rem;
   margin: 0;
 `
-
 export const Header = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline;
+`
+
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -74,8 +82,6 @@ export const Header = styled.div`
   transition: 0.2s;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
-  /* margin: 2rem;
-  padding: 2rem 8rem; */
 
   :hover {
     /* cursor: default; */
@@ -135,27 +141,22 @@ export const Info = styled.div`
 `
 
 export const Bio = styled.div`
-  margin: 2rem 0rem;
-  position: relative;
+  margin: 2rem 3rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 25rem;
-`
-
-export const Headshot = styled.img`
-  position: absolute;
-  border-radius: 100%;
-  height: 65%;
-  right: 0;
-  top: 50%;
-  transform: translate(0%, -50%);
 `
 
 export const About = styled.p`
   position: relative;
-  width: 80%;
-  height: calc(100% - 1em);
-  padding: 0.5em 0 0 0.5em;
+  width: 40%;
+  height: auto;
+  padding: 2em;
   font-size: 1.5rem;
   border-radius: 10px;
+  border: solid 2px red;
 `
 
 export const Skills = styled.p``
