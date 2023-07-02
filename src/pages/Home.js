@@ -32,7 +32,7 @@ function Home({ scroll }) {
             <div 
               style={{
                 position: `relative`,
-                top: `-6rem`,
+                top: `0rem`,
               }}
             >
               Hello, my name is
@@ -57,8 +57,8 @@ function Home({ scroll }) {
       <Page id="about" num_pages={1}>
         <Content>
           <Container>
+          <Header><Span>01</Span>About</Header>
             <Wrapper>
-              <Header><Span>01</Span>About</Header>
               <Bio>
                 <About>
                   I am a software engineer currently based in New York.
@@ -69,8 +69,8 @@ function Home({ scroll }) {
                   out about any exciting opportunies you would want me to be apart 
                   of.
                 </About>
-                <Image src={Profile} alt="quarantine" position="left"></Image> 
               </Bio>
+              <Image src={Profile} alt="quarantine" position="left"></Image>
             </Wrapper>
           </Container>
         </Content>

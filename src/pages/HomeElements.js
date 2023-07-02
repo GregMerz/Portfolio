@@ -16,7 +16,7 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding: 148px 3rem 3rem 3rem;
+  padding: 148px 3rem 116px 3rem;
   margin: 0 148px 0 3rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
@@ -68,14 +68,18 @@ export const Header = styled.div`
   left: 0;
   top: 0;
   display: inline;
+  font-size: 3rem;
+  font-family: 'Fira Sans';
+  letter-spacing: 1px;
 `
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   height: 100%;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
   overflow: hidden;
   font-size: 3rem;
@@ -114,7 +118,7 @@ export const Card = styled.div`
 `
 
 export const Image = styled.img`
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   height: 70%;
   filter: brightness(75%);
@@ -141,17 +145,13 @@ export const Info = styled.div`
 `
 
 export const Bio = styled.div`
-  margin: 2rem 3rem;
-  padding: 0 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 25rem;
+width: 40%;
 `
 
 export const About = styled.p`
   position: relative;
-  width: 40%;
+  
+  margin: 0;
   height: auto;
   padding: 2em;
   font-size: 1.5rem;
