@@ -21,7 +21,7 @@ export const Content = styled.div`
   position: relative;
   /* -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box;  */
-  box-sizing: border-box; 
+  box-sizing: border-box;
 `
 
 export const ExperienceContainter = styled.div`
@@ -34,7 +34,7 @@ export const ExperienceContainter = styled.div`
 `
 
 export const CompanyHeader = styled.p`
-/* position: relative; */
+  /* position: relative; */
   padding: 0;
   margin: 0;
 `
@@ -143,7 +143,8 @@ export const Card = styled.div`
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  width: 500px;
+  max-width: 500px;
+  max-height: 90%;
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
@@ -166,18 +167,16 @@ export const Bio = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 80%;
-  width: 50%;
+  max-height: 80%;
+  min-width: 50%;
 `
 
 export const About = styled.p`
   position: relative;
   margin: 0;
   height: auto;
-  padding: 2em;
+  padding: 1.5em 1.5em 1.5em 0;
   font-size: 1.5rem;
-  border-radius: 10px;
-  border: solid 2px red;
 `
 
 export const Skills = styled.div`

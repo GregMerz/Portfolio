@@ -29,7 +29,7 @@ export const Logo = styled.a`
   font-family: Simply Glamorous;
   text-decoration: none;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: rgba(0, 0, 0, .12);
+  background: rgba(0, 0, 0, 0.12);
   border-radius: 0 50px 50px 0;
   padding: 2rem 2rem 2rem 1rem;
   border-bottom: 5px solid var(--shadow--color);
@@ -38,7 +38,7 @@ export const Logo = styled.a`
   :hover {
     cursor: none;
     font-size: 26px;
-    background: rgba(0, 0, 0, .14);
+    background: rgba(0, 0, 0, 0.14);
     /* filter: brightness(110%); */
   }
 `
@@ -57,7 +57,7 @@ export const Wrapper = styled.ul`
   /* border-bottom: 7px solid var(--shadow--color);
   border-left: 7px solid var(--shadow--color); */
   /* background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color)); */
-  background: rgba(0, 0, 0, .105);
+  background: rgba(0, 0, 0, 0.105);
 
   backdrop-filter: blur(1rem);
 
@@ -87,7 +87,7 @@ export const Wrapper = styled.ul`
 export const Active = styled.li`
   position: relative;
   width: 10rem;
-  height: 20px;
+  height: 1vh;
 
   /* :after {
         content: "";
@@ -118,6 +118,7 @@ export const Link = styled(LinkS)`
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 2px;
+    top: -5px;
     /* cursor: pointer; */
     transition: 0.2s ease-in-out;
     /* color: ${({ scroll, start, end }) =>
