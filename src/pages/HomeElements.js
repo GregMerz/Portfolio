@@ -34,6 +34,7 @@ export const ExperienceContainter = styled.div`
 `
 
 export const CompanyHeader = styled.p`
+/* position: relative; */
   padding: 0;
   margin: 0;
 `
@@ -64,13 +65,34 @@ export const Subtitle = styled.h1`
   margin: 0;
 `
 export const Header = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
   display: inline;
   font-size: 3rem;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
+
+  /* :hover {
+    cursor: default;
+    transition: 0.2s ease-in-out;
+  }
+
+  :after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -4px;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  :hover:after,
+  :focus:after,
+  :active:after {
+    width: 100%;
+  } */
 `
 
 export const Wrapper = styled.div`
@@ -87,8 +109,8 @@ export const Wrapper = styled.div`
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
-  :hover {
-    /* cursor: default; */
+  /* :hover {
+    cursor: default;
     transition: 0.2s ease-in-out;
   }
 
@@ -108,22 +130,23 @@ export const Wrapper = styled.div`
   :focus:after,
   :active:after {
     width: 100%;
-  }
+  } */
 `
 
 export const Card = styled.div`
   position: relative;
   height: 22rem;
   margin: 2rem 0 6rem 0;
+  width: 100%;
 `
 
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  height: 70%;
+  width: 30%;
   filter: brightness(75%);
   transition: 1s;
-  right: ${({ position }) => (position === 'left' ? 0 : 'auto')};
+  /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
   :hover {
     filter: brightness(90%);
@@ -132,13 +155,8 @@ export const Image = styled.img`
 `
 
 export const Info = styled.div`
-  position: absolute;
-  left: ${({ position }) => (position === 'left' ? 0 : 'auto')};
-  right: ${({ position }) => (position === 'left' ? 'auto' : 0)};
-  top: 50%;
-  transform: translate(0%, -50%);
+  position: relative;
   width: 35rem;
-  text-align: right;
   text-align: ${({ position }) => (position === 'left' ? 'left' : 'right')};
   font-size: 1.5rem;
   padding: 1rem 1rem;

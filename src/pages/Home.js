@@ -57,7 +57,7 @@ function Home({ scroll }) {
       <Page id="about" num_pages={1}>
         <Content>
           <Container>
-          <Header><Span>01</Span>About</Header>
+            <Header><Span>01</Span>About</Header>
             <Wrapper>
               <Bio>
                 <About>
@@ -66,7 +66,7 @@ function Home({ scroll }) {
                   on the backend and React, Next.js, and Bulma in the frontend.
                   Currently, I am looking for new opportunities and am able to work
                   from New York, San Francisco, or Seattle areas so feel free to reach
-                  out about any exciting opportunies you would want me to be apart 
+                  out about any exciting opportunies that I could be apart 
                   of.
                 </About>
               </Bio>
@@ -79,8 +79,9 @@ function Home({ scroll }) {
       <Page id="experience" num_pages={1}>
         <Content>
           <Container>
+          <Header><Span>02</Span>Experience</Header>
             <Wrapper>
-              <Header><Span>02</Span>Experience</Header>
+              
             </Wrapper>
           </Container>
         </Content>
@@ -90,11 +91,12 @@ function Home({ scroll }) {
       <Page id="projects" num_pages={'auto'}>
         <Content>
           <Container>
+            <Header>
+              <Span>03</Span>Projects
+            </Header>
+            <Card>
             <Wrapper>
-              <Header>
-                <Span>03</Span>Projects
-              </Header>
-              <Card>
+              
                 <Image src={ChessImg} alt="chess"></Image>
                 <Info>
                   <Title>Chess</Title>
@@ -110,9 +112,12 @@ function Home({ scroll }) {
                     <Tool>Chess.com API</Tool>
                   </Tools>
                 </Info>
+              
+              </Wrapper>
               </Card>
               <Card>
-                <Image src={Quarantine} alt="quarantine" position="left"></Image>
+              <Wrapper>
+              
                 <Info position="left">
                   <Title>Quarantine</Title>
                   <Description>
@@ -129,8 +134,10 @@ function Home({ scroll }) {
                     <Tool>Singleton</Tool>
                   </Tools>
                 </Info>
-              </Card>
+                <Image src={Quarantine} alt="quarantine"></Image>
+              
             </Wrapper>
+            </Card>
           </Container>
         </Content>
       </Page>
