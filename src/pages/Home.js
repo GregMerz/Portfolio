@@ -15,6 +15,8 @@ import {
   Container,
   SignatureName,
   Wrapper,
+  Skills,
+  Skill,
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
@@ -57,9 +59,9 @@ function Home({ scroll }) {
       <Page id="about" num_pages={1}>
         <Content>
           <Container>
-            <Header><Span>01</Span>About</Header>
             <Wrapper>
               <Bio>
+                <Header><Span>01</Span>About</Header>
                 <About>
                   I am a software engineer currently based in New York.
                   I have experience working with Java, Spring Boot, and MySQL
@@ -69,6 +71,11 @@ function Home({ scroll }) {
                   out about any exciting opportunies that I could be apart 
                   of.
                 </About>
+                <Skills>
+                  <Skill>Languages: Java, Javascript, Python, C++, C#, C</Skill>
+                  <Skill>Frontend Tools: React (Native), Next.js, Node.js</Skill>
+                  <Skill>Backend Tools: Spring Boot, MySQL, Stripe, AWS</Skill>
+                </Skills>
               </Bio>
               <Image src={Profile} alt="quarantine" position="left"></Image>
             </Wrapper>

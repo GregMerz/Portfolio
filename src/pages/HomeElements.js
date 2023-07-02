@@ -135,15 +135,15 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  height: 22rem;
-  margin: 2rem 0 6rem 0;
+  height: 30rem;
+  /* margin: 2rem 0 6rem 0; */
   width: 100%;
 `
 
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  width: 30%;
+  width: 500px;
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
@@ -163,12 +163,15 @@ export const Info = styled.div`
 `
 
 export const Bio = styled.div`
-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 50%;
 `
 
 export const About = styled.p`
   position: relative;
-  
   margin: 0;
   height: auto;
   padding: 2em;
@@ -177,7 +180,16 @@ export const About = styled.p`
   border: solid 2px red;
 `
 
-export const Skills = styled.p``
+export const Skills = styled.div`
+  font-family: Courier;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+`
+
+export const Skill = styled.p`
+  margin: 0;
+`
 
 export const Title = styled.h2`
   font-size: 3rem;
@@ -189,8 +201,8 @@ export const Title = styled.h2`
 export const Description = styled.p`
   transition: 1s;
   border-radius: 10px;
-  padding: 0.5em 0.5em;
-  margin: 1rem 0;
+  /* padding: 0.5em 0.5em; */
+  margin: 2rem 0;
 `
 
 export const Tools = styled.div`
