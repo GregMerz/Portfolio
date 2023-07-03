@@ -16,8 +16,8 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding: 148px 3rem 116px 3rem;
-  margin: 0 148px 0 3rem;
+  padding: 0 3rem 0 3rem;
+  margin: 0 0 0 3rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box;  */
@@ -74,8 +74,8 @@ export const Header = styled.div`
     content: '';
     position: absolute;
     left: 0;
-    width: 100%;
-    bottom: -4px;
+    width: 0%;
+    top: 5px;
     height: 4px;
     transition-property: width;
     transition-duration: 0.2s;
@@ -94,7 +94,7 @@ export const Wrapper = styled.div`
   /* flex-direction: column; */
   height: 100%;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -130,7 +130,7 @@ export const Wrapper = styled.div`
 export const Card = styled.div`
   position: relative;
   height: auto;
-  /* margin: 2rem 0 6rem 0; */
+  margin: 2rem 0 6rem 0;
   width: 100%;
 `
 
@@ -138,7 +138,7 @@ export const Image = styled.img`
   position: relative;
   border-radius: 10px;
   max-width: 500px;
-  max-height: 90%;
+  max-height: 500px;
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
@@ -152,7 +152,8 @@ export const Image = styled.img`
 export const Info = styled.div`
   position: relative;
   width: 35rem;
-  /* text-align: ${({ position }) => (position === 'left' ? 'left' : 'right')}; */
+  /* text-align: ${({ position }) =>
+    position === 'left' ? 'left' : 'right'}; */
   font-size: 1.5rem;
   padding: 1rem 1rem;
 `

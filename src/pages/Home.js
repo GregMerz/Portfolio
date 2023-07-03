@@ -100,29 +100,44 @@ function Home({ scroll }) {
               <Wrapper>
                 <Info position="left">
                   <Title>
-                    <img src={WalnutLogo} alt="Walnut"/>
-                    <p style={{
-                      fontSize: `1rem`,
-                      fontWeight: `normal`,
-                    }}>
-                      January 2022 - November 2022</p>
+                    <img src={WalnutLogo} alt="Walnut" />
+                    <p
+                      style={{
+                        fontSize: `1rem`,
+                        fontWeight: `normal`,
+                      }}
+                    >
+                      January 2022 - November 2022
+                    </p>
                   </Title>
                   <Description>
-                    <ul style={{
-                    padding: `0`,
-                  }}>
-                    <li>Software Engineer on the Acquisition and Retention team which specialized in innovating upon 
-                        our existing products by improving the aesthetics, usability, and functionality
-                    </li>
-                    <li>Decreased the amount of time to fix bugs by 30% by implementing a monitoring system that
-                    prints out a log of the data being sent in and out by third-party systems
-                    </li>
-                    <li>Improved the payment infrastructure with Stripe’s third-party system by storing new patient and 
-                    transactional data in a database which enabled the product release of payment plans for medical 
-                    bills</li>
-                    <li>Collaborated with our design team to enhance the layout of the product website by designing a 
-                    sidebar menu with page navigation and implementing a table filter
-                    </li>
+                    <ul
+                      style={{
+                        padding: `0`,
+                      }}
+                    >
+                      <li>
+                        Software Engineer on the Acquisition and Retention team
+                        which specialized in innovating upon our existing
+                        products by improving the aesthetics, usability, and
+                        functionality
+                      </li>
+                      <li>
+                        Decreased the amount of time to fix bugs by 30% by
+                        implementing a monitoring system that prints out a log
+                        of the data being sent in and out by third-party systems
+                      </li>
+                      <li>
+                        Improved the payment infrastructure with Stripe’s
+                        third-party system by storing new patient and
+                        transactional data in a database which enabled the
+                        product release of payment plans for medical bills
+                      </li>
+                      <li>
+                        Collaborated with our design team to enhance the layout
+                        of the product website by designing a sidebar menu with
+                        page navigation and implementing a table filter
+                      </li>
                     </ul>
                   </Description>
                   <Tools>
@@ -141,22 +156,35 @@ function Home({ scroll }) {
               <Wrapper>
                 <Image src={SDSUAILab} alt="chess"></Image>
                 <Info>
-                  <Title>SDSU AI Lab
-                    <p style={{
-                      fontSize: `1rem`,
-                      fontWeight: `normal`,
-                    }}>September 2021 - January 2022</p></Title>
+                  <Title>
+                    SDSU AI Lab
+                    <p
+                      style={{
+                        fontSize: `1rem`,
+                        fontWeight: `normal`,
+                      }}
+                    >
+                      September 2021 - January 2022
+                    </p>
+                  </Title>
                   <Description>
-                  <ul style={{
-                    padding: `0`,
-                  }}>
-                    <li>Worked on the layout design for the augmented reality interface on HoloLens that facilitates
-                        equipment maintenance on US Navy ships to reduce mistakes during repairs
-                    </li>
-                    <li>
-                      Used 3D models of equipment to undergo diagnostics for routine maintenance and display 
-                      metrics based on performance to increase visibility and analyze the functionality of machine parts
-                    </li>
+                    <ul
+                      style={{
+                        padding: `0`,
+                      }}
+                    >
+                      <li>
+                        Worked on the layout design for the augmented reality
+                        interface on HoloLens that facilitates equipment
+                        maintenance on US Navy ships to reduce mistakes during
+                        repairs
+                      </li>
+                      <li>
+                        Used 3D models of equipment to undergo diagnostics for
+                        routine maintenance and display metrics based on
+                        performance to increase visibility and analyze the
+                        functionality of machine parts
+                      </li>
                     </ul>
                   </Description>
                   <Tools>
@@ -169,7 +197,6 @@ function Home({ scroll }) {
             </Card>
           </Container>
         </Content>
-        {/* <TimeLine></TimeLine> */}
       </Page>
 
       <Page id="projects" num_pages={'auto'}>
