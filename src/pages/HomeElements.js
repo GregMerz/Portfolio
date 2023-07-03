@@ -129,7 +129,7 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  height: 30rem;
+  height: auto;
   /* margin: 2rem 0 6rem 0; */
   width: 100%;
 `
@@ -152,7 +152,7 @@ export const Image = styled.img`
 export const Info = styled.div`
   position: relative;
   width: 35rem;
-  text-align: ${({ position }) => (position === 'left' ? 'left' : 'right')};
+  /* text-align: ${({ position }) => (position === 'left' ? 'left' : 'right')}; */
   font-size: 1.5rem;
   padding: 1rem 1rem;
 `
