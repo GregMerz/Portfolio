@@ -25,6 +25,8 @@ import ChessImg from '../images/HoveringOverPieces.jpeg'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
 import WalnutLogo from '../images/WalnutLogo.png'
+import WalnutMeetup from '../images/WalnutMeetup.png'
+import SDSUAILab from '../images/SDSUAILab.jpg'
 
 function Home({ scroll }) {
   return (
@@ -94,7 +96,58 @@ function Home({ scroll }) {
             <Header>
               <Span>02</Span>Experience
             </Header>
-            <Wrapper></Wrapper>
+            <Card>
+              <Wrapper>
+                <Info position="left">
+                  <Title>
+                    <img src={WalnutLogo} alt="Walnut"/>
+                    <p style={{
+                      fontSize: `1rem`,
+                      fontWeight: `normal`,
+                    }}>
+                      January 2022 - November 2022</p>
+                  </Title>
+                  <Description>
+                    Designed a chess game using Java and JFrame that allows two
+                    players to play chess with implemented GUI. Implementing a
+                    second iteration of the project that will parse through
+                    large sets of data from
+                  </Description>
+                  <Tools>
+                    <Tool>Java</Tool>
+                    <Tool>Javascript</Tool>
+                    <Tool>Spring Boot</Tool>
+                    <Tool>React</Tool>
+                    {/* <Tool>MySQL</Tool>
+                    <Tool>Next.js</Tool> */}
+                  </Tools>
+                </Info>
+                <Image src={WalnutMeetup} alt="chess"></Image>
+              </Wrapper>
+            </Card>
+            <Card>
+              <Wrapper>
+                <Image src={SDSUAILab} alt="chess"></Image>
+                <Info>
+                  <Title>SDSU AI Lab
+                    <p style={{
+                      fontSize: `1rem`,
+                      fontWeight: `normal`,
+                    }}>September 2021 - January 2022</p></Title>
+                  <Description>
+                    Designed a chess game using Java and JFrame that allows two
+                    players to play chess with implemented GUI. Implementing a
+                    second iteration of the project that will parse through
+                    large sets of data from
+                  </Description>
+                  <Tools>
+                    <Tool>Java</Tool>
+                    <Tool>JFrame</Tool>
+                    <Tool>Chess.com API</Tool>
+                  </Tools>
+                </Info>
+              </Wrapper>
+            </Card>
           </Container>
         </Content>
         {/* <TimeLine></TimeLine> */}

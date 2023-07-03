@@ -33,12 +33,6 @@ export const ExperienceContainter = styled.div`
   width: 80%;
 `
 
-export const CompanyHeader = styled.p`
-  /* position: relative; */
-  padding: 0;
-  margin: 0;
-`
-
 export const BulletPoints = styled.li`
   margin: 1rem 0;
 `
@@ -190,8 +184,9 @@ export const Skill = styled.p`
   margin: 0;
 `
 
-export const Title = styled.h2`
+export const Title = styled.div`
   font-size: 3rem;
+  font-weight: bold;
   margin: 0;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
