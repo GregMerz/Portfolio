@@ -24,9 +24,9 @@ import React from 'react'
 import ChessImg from '../images/HoveringOverPieces.jpeg'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
-import WalnutLogo from '../images/WalnutLogo.png'
+import WalnutLogo from '../images/WalnutLogo.jpg'
 import WalnutMeetup from '../images/WalnutMeetup.png'
-import SDSUAILab from '../images/SDSUAILab.jpg'
+import SDSUAILab from '../images/SDSUAILab.png'
 
 function Home({ scroll }) {
   return (
@@ -114,6 +114,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
+                        fontSize: `1.25rem`
                       }}
                     >
                       <li>
@@ -171,6 +172,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
+                        fontSize: `1.25rem`
                       }}
                     >
                       <li>

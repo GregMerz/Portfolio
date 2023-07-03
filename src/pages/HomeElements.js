@@ -16,12 +16,16 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding: 0 3rem 0 3rem;
+  padding-inline: 0 3rem 0 3rem;
   margin: 0 0 0 3rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box;  */
   box-sizing: border-box;
+
+  @media (min-width: 1240px) {
+    margin: 0 15rem 0 15rem;
+  }
 `
 
 export const ExperienceContainter = styled.div`
@@ -137,8 +141,8 @@ export const Card = styled.div`
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 45%;
+  /* max-height: 60%; */
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
@@ -208,7 +212,7 @@ export const Tools = styled.div`
 
 export const Tool = styled.p`
   display: inline;
-  padding: 0 0.5em;
+  padding: 0 1em 0 0;
 `
 
 export const Record = styled.div`
