@@ -16,15 +16,15 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding-inline: 0 3rem 0 3rem;
+  padding: 3rem 3rem 0 3rem;
   margin: 0 0 0 3rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box;  */
   box-sizing: border-box;
 
-  @media (min-width: 1240px) {
-    margin: 0 15rem 0 15rem;
+  @media (min-width: 1441px) {
+    margin-inline: 15rem;
   }
 `
 
@@ -44,6 +44,7 @@ export const BulletPoints = styled.li`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-block: 3rem;
 `
 
 export const Headline = styled.h1`

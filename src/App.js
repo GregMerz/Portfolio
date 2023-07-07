@@ -6,30 +6,30 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import React from 'react'
 import CustomCursor from './images/MusicNote.png'
 
-const Cursor = () => {
-  const cursorRef = React.useRef(null)
+// const Cursor = () => {
+//   const cursorRef = React.useRef(null)
 
-  React.useEffect(() => {
-    // document.getElementsByClassName()
-    document.addEventListener('mousemove', (event) => {
-      const { clientX, clientY } = event
-      const mouseX = clientX - cursorRef.current.clientWidth / 2
-      const mouseY = clientY - cursorRef.current.clientHeight / 2
-      if (mouseY <= -10) {
-        cursorRef.current.style.visibility = `hidden`
-      } else {
-        cursorRef.current.style.visibility = `visible`
-      }
-      cursorRef.current.style.transform = `translate3d(${mouseX + 5}px, ${
-        mouseY + 7
-      }px, 0) rotate(-60deg)`
-    })
-  }, [])
+//   React.useEffect(() => {
+//     // document.getElementsByClassName()
+//     document.addEventListener('mousemove', (event) => {
+//       const { clientX, clientY } = event
+//       const mouseX = clientX - cursorRef.current.clientWidth / 2
+//       const mouseY = clientY - cursorRef.current.clientHeight / 2
+//       if (mouseY <= -10) {
+//         cursorRef.current.style.visibility = `hidden`
+//       } else {
+//         cursorRef.current.style.visibility = `visible`
+//       }
+//       cursorRef.current.style.transform = `translate3d(${mouseX + 5}px, ${
+//         mouseY + 7
+//       }px, 0) rotate(-60deg)`
+//     })
+//   }, [])
 
-  return (
-    <img className="app-cursor" src={CustomCursor} alt="" ref={cursorRef} />
-  )
-}
+//   return (
+//     <img className="app-cursor" src={CustomCursor} alt="" ref={cursorRef} />
+//   )
+// }
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <Router>
-      <Cursor />
+      {/* <Cursor /> */}
       <Sidebar scroll={scroll} />
       <Navbar scroll={scroll} />
       <Home scroll={scroll} />

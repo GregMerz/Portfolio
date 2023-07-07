@@ -59,7 +59,7 @@ function Home({ scroll }) {
         </Content>
       </Page> */}
 
-      <Page id="about" num_pages={1}>
+      <Page id="about" num_pages={'auto'}>
         <Content>
           <Container>
             <Wrapper>
@@ -100,7 +100,8 @@ function Home({ scroll }) {
               <Wrapper>
                 <Info position="left">
                   <Title>
-                    <img src={WalnutLogo} alt="Walnut" />
+                    Walnut
+                    {/* <img src={WalnutLogo} alt="Walnut" /> */}
                     <p
                       style={{
                         fontSize: `1rem`,

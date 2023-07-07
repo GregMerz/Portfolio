@@ -14,7 +14,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   font-family: Fira Sans;
-  z-index: 20;
+  z-index: 99;
   top: 0rem;
 
   @media (max-width: 40em) {
