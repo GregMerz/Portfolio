@@ -143,7 +143,7 @@ export const Image = styled.img`
   position: relative;
   border-radius: 10px;
   max-width: 45%;
-  /* max-height: 60%; */
+  max-height: 75%;
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */

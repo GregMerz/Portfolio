@@ -157,7 +157,7 @@ export const Span = styled.span`
 export const HamburgerMenuWrapper = styled.div`
   display: none;
 
-  @media (max-width: 40em) {
+  @media (max-width: 40rem) {
     display: block;
     position: absolute;
     right: 2rem;

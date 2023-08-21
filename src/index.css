@@ -43,7 +43,7 @@
   --secondary--color: black;
   --dark--text: black;
   --light--text: white;
-  /* cursor: none; */
+  cursor: none;
 }
 
 body {
@@ -65,7 +65,6 @@ body {
   position: fixed;
   visibility: hidden;
 }
-
 
 /* .falling-image {
   z-index: 1000;

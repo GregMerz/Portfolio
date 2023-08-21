@@ -79,11 +79,11 @@ function Navbar({ scroll }) {
               <Span aria-hidden="true">03</Span>Projects
             </Link>
           </Active>
-          <Active>
+          {/* <Active>
             <Link scroll={scroll} start={2588} end={3000}>
               <Span aria-hidden="true">04</Span>Contact
             </Link>
-          </Active>
+          </Active> */}
         </Wrapper>
       </Nav>
     </Header>
