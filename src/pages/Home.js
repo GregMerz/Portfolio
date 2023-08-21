@@ -27,6 +27,7 @@ import Profile from '../images/profile.jpg'
 import WalnutLogo from '../images/WalnutLogo.jpg'
 import WalnutMeetup from '../images/WalnutMeetup.png'
 import SDSUAILab from '../images/SDSUAILab.png'
+import BuildingWebpage from '../images/BuildingWebpage.jpeg'
 
 function Home({ scroll }) {
   return (
@@ -84,7 +85,11 @@ function Home({ scroll }) {
                   <Skill>Backend Tools: Spring Boot, MySQL, Stripe, AWS</Skill>
                 </Skills>
               </Bio>
-              <Image src={Profile} alt="quarantine" position="left"></Image>
+              <Image
+                src={BuildingWebpage}
+                alt="quarantine"
+                position="left"
+              ></Image>
             </Wrapper>
           </Container>
         </Content>
@@ -115,7 +120,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
-                        fontSize: `1.25rem`
+                        fontSize: `1.25rem`,
                       }}
                     >
                       <li>
@@ -173,7 +178,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
-                        fontSize: `1.25rem`
+                        fontSize: `1.25rem`,
                       }}
                     >
                       <li>
