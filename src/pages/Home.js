@@ -69,20 +69,28 @@ function Home({ scroll }) {
                   <Span>01</Span>About
                 </Header>
                 <About>
-                  I am a software engineer currently based in New York. I have
-                  experience working with Java, Spring Boot, and MySQL on the
-                  backend and React, Next.js, and Bulma in the frontend.
-                  Currently, I am looking for new opportunities and am able to
-                  work from New York, San Francisco, or Seattle areas so feel
-                  free to reach out about any exciting opportunies that I could
-                  be apart of.
+                  I am a new grad software engineer based in the Bay Area. My
+                  love for coding began when I started my first project which
+                  involved rendering 3D graphics. This marked the first
+                  milestone of the possibilites of coding and introduced me to
+                  the behind the scene of how applications are made. I have
+                  always been curious to learn about the inner workings of
+                  technology which has lead to my interest of learning how
+                  webpages function and how they are designed. <br />
+                  <br />
+                  Currently, I am looking for new software engineer
+                  opportunities and am able to work from San Francisco or
+                  Seattle area.
                 </About>
+
                 <Skills>
                   <Skill>Languages: Java, Javascript, Python, C++, C#, C</Skill>
                   <Skill>
                     Frontend Tools: React (Native), Next.js, Node.js
                   </Skill>
-                  <Skill>Backend Tools: Spring Boot, MySQL, Stripe, AWS</Skill>
+                  <Skill>
+                    Backend Tools: Spring Boot, MySQL, MongoDB, Stripe, AWS
+                  </Skill>
                 </Skills>
               </Bio>
               <Image
@@ -149,8 +157,9 @@ function Home({ scroll }) {
                   </Description>
                   <Tools>
                     <Tool>Java</Tool>
-                    <Tool>Javascript</Tool>
                     <Tool>Spring Boot</Tool>
+                    <Tool>MySQL</Tool>
+                    <Tool>MongoDB</Tool>
                     <Tool>React</Tool>
                     {/* <Tool>MySQL</Tool>
                     <Tool>Next.js</Tool> */}

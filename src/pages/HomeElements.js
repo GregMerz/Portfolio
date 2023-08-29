@@ -17,7 +17,7 @@ export const Content = styled.div`
   display: block;
   height: 100%;
   padding: 3rem 3rem 0 3rem;
-  margin: 0 0 0 3rem;
+  margin: 0 0 0 3.5rem;
   position: relative;
   /* -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box;  */
@@ -25,6 +25,9 @@ export const Content = styled.div`
 
   @media (min-width: 1441px) {
     margin-inline: 15rem;
+  }
+  @media (max-width: 40rem) {
+    padding: 3rem 0 0 0;
   }
 `
 
@@ -214,6 +217,7 @@ export const Tools = styled.div`
 export const Tool = styled.p`
   display: inline;
   padding: 0 1em 0 0;
+  font-size: 1.25rem;
 `
 
 export const Record = styled.div`
