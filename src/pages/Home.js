@@ -72,15 +72,16 @@ function Home({ scroll }) {
                   I am a new grad software engineer based in the Bay Area. My
                   love for coding began when I started my first project which
                   involved rendering 3D graphics. This marked the first
-                  milestone of the possibilites of coding and introduced me to
+                  milestone of the possibilities of coding and introduced me to
                   the behind the scene of how applications are made. I have
                   always been curious to learn about the inner workings of
-                  technology which has lead to my interest of learning how
-                  webpages function and how they are designed. <br />
+                  technology which has led to my interest in learning how
+                  webpages function and how they are designed.
                   <br />
-                  Currently, I am looking for new software engineer
+                  <br />
+                  Currently, I am looking for a new software engineering
                   opportunities and am able to work from San Francisco or
-                  Seattle area.
+                  Seattle.
                 </About>
 
                 <Skills>
