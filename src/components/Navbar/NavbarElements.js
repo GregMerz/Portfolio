@@ -48,6 +48,7 @@ export const Logo = styled.a`
   @media (max-width: 40rem) {
     font-size: 18px;
     background: rgb(228, 228, 228);
+    display: none;
   }
 `
 

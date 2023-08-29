@@ -65,18 +65,14 @@ function Home({ scroll }) {
           <Container>
             <Wrapper>
               <Bio>
-                <div
-                  style={{
-                    paddingRight: `5rem`,
-                  }}
-                >
+                <Info>
                   <Header>
                     <Span>01</Span>About
                   </Header>
                   <About>
                     I am a new grad software engineer based in the Bay Area. My
                     love for coding began when I started my first project which
-                    involved rendering 3D graphics. This marked the first
+                    involved me learning how to rendering 3D graphics. This marked the first
                     milestone of the possibilities of coding and introduced me
                     to the behind the scene of how applications are made. I have
                     always been curious to learn about the inner workings of
@@ -84,7 +80,7 @@ function Home({ scroll }) {
                     webpages function and how they are designed.
                     <br />
                     <br />
-                    Currently, I am looking for a new software engineering
+                    Currently, I am looking for new software engineering
                     opportunities and am able to work from San Francisco or
                     Seattle.
                   </About>
@@ -100,7 +96,7 @@ function Home({ scroll }) {
                       Backend Tools: Spring Boot, MySQL, MongoDB, Stripe, AWS
                     </Skill>
                   </Skills>
-                </div>
+                </Info>
               </Bio>
               <Image
                 src={BuildingWebpage}
@@ -167,7 +163,7 @@ function Home({ scroll }) {
                   </Description>
                   <Tools>
                     <Tool>Java</Tool>
-                    <Tool>Spring Boot</Tool>
+                    <Tool>SpringBoot</Tool>
                     <Tool>MySQL</Tool>
                     <Tool>MongoDB</Tool>
                     <Tool>React</Tool>
@@ -180,8 +176,7 @@ function Home({ scroll }) {
             </Card>
             <Card>
               <Wrapper>
-                <Image src={SDSUAILab} alt="SdsuAILab"></Image>
-                <Info>
+                <Info position="left">
                   <Title>
                     SDSU AI Lab
                     <p
@@ -221,6 +216,7 @@ function Home({ scroll }) {
                     <Tool>Chess.com API</Tool>
                   </Tools>
                 </Info>
+                <Image src={SDSUAILab} alt="SdsuAILab"></Image>
               </Wrapper>
             </Card>
           </Container>
@@ -250,7 +246,7 @@ function Home({ scroll }) {
                   <Tools>
                     <Tool>Java</Tool>
                     <Tool>JFrame</Tool>
-                    <Tool>Chess.com API</Tool>
+                    <Tool>RESTful API</Tool>
                   </Tools>
                 </Info>
               </Wrapper>

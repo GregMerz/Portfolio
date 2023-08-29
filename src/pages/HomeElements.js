@@ -30,9 +30,10 @@ export const Content = styled.div`
   @media (min-width: 1441px) {
     margin-inline: 15rem;
   }
+
   @media (max-width: 40rem) {
     padding: 3rem 0 0 0;
-    margin: 0 0 0 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
   }
 `
 
@@ -147,7 +148,7 @@ export const Wrapper = styled.div`
 export const Card = styled.div`
   position: relative;
   height: auto;
-  margin: 2rem 0 6rem 0;
+  margin: 2rem 0 2rem 0;
   width: 100%;
 `
 
@@ -173,12 +174,14 @@ export const Image = styled.img`
 export const Info = styled.div`
   position: relative;
   width: 32.5rem;
-  /* text-align: ${({ position }) =>
-    position === 'left' ? 'left' : 'right'}; */
   font-size: 1.5rem;
   padding: ${({ position }) =>
-    position === 'left' ? '1rem 3rem 0 1rem' : '1rem 1rem 0 3rem'};
+    position === 'left' ? '1rem 3rem 0 1.5rem' : '1rem 1.5rem 0 3rem'};
   /* padding: 1rem 3rem; */
+
+  @media (max-width: 40rem) {
+    width: auto;
+  }
 `
 
 export const Bio = styled.div`
@@ -203,6 +206,11 @@ export const Skills = styled.div`
   font-weight: 500;
   font-size: 1.125rem;
   letter-spacing: 0px;
+  padding-bottom: 2rem;
+
+  @media (max-width: 40rem) {
+    font-size: 1rem;
+  }
 `
 
 export const Skill = styled.p`
@@ -230,6 +238,11 @@ export const Tools = styled.div`
   font-family: Courier;
   font-weight: 500;
   font-size: 1.25rem;
+  padding-bottom: 3rem;
+
+  @media (max-width: 40rem) {
+    font-size: 1rem;
+  }
 `
 
 export const Tool = styled.p`
