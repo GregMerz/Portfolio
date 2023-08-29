@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const SidebarContainer = styled.div`
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 120px;
   height: 100vh;
   position: fixed;
   display: grid;
@@ -48,7 +48,7 @@ export const SidebarWrapper = styled.div`
   left: 0;
   bottom: 0;
   height: auto;
-  padding-block: 0.5rem;
+  padding-block: 1rem;
 
   /* display: grid;
   grid-template-columns: 1fr;
@@ -61,12 +61,12 @@ export const SidebarLink = styled.a`
   justify-content: center;
   transition: 0.2s ease-in-out;
   /* cursor: pointer; */
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: rgba(0, 0, 0, 0.12);
-  /* border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black; */
+  /* background: rgba(0, 0, 0, 0.12); */
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   border-radius: 0 50px 50px 0;
   height: 4rem;
   /* border-bottom: 5px solid var(--shadow--color);
@@ -78,7 +78,7 @@ export const SidebarLink = styled.a`
     /* filter: brightness(110%); */
     transition: 0.2s ease-in-out;
     width: 110%;
-    background: rgba(0, 0, 0, 0.14);
+    /* background: rgba(0, 0, 0, 0.14); */
   }
 
   @media (max-width: 40rem) {
@@ -88,5 +88,5 @@ export const SidebarLink = styled.a`
 
 export const SidebarImg = styled.img`
   /* cursor: pointer; */
-  width: 30%;
+  width: 27.5%;
 `

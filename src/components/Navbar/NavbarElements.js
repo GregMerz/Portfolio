@@ -9,7 +9,7 @@ export const Header = styled.header`
   position: fixed;
   display: flex;
   width: 100%;
-  margin: 1rem 0;
+  padding: 1.5rem 0;
   gap: var(--gap, 1rem);
   align-items: center;
   justify-content: space-between;
@@ -29,16 +29,19 @@ export const Logo = styled.a`
   font-family: Simply Glamorous;
   text-decoration: none;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  background: rgba(0, 0, 0, 0.12);
+  /* background: rgba(0, 0, 0, 0.12); */
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   border-radius: 0 50px 50px 0;
   padding: 2rem 2rem 2rem 1rem;
-  border-bottom: 5px solid var(--shadow--color);
-  border-right: 5px solid var(--shadow--color);
+  /* border-bottom: 5px solid var(--shadow--color);
+  border-right: 5px solid var(--shadow--color); */
 
   :hover {
     cursor: none;
     font-size: 26px;
-    background: rgba(0, 0, 0, 0.14);
+    /* background: rgba(0, 0, 0, 0.14); */
     /* filter: brightness(110%); */
   }
 
@@ -53,18 +56,21 @@ export const Nav = styled.nav``
 export const Wrapper = styled.ul`
   display: flex;
   gap: var(--gap, 1rem);
-
+  background: white;
   list-style: none;
   padding: 0;
   margin: 0;
   border-radius: 50px 0 0 50px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   /* border-top: 3px solid #abccd8; */
   /* border-bottom: 7px solid var(--shadow--color);
   border-left: 7px solid var(--shadow--color); */
   /* background: linear-gradient(0.25turn, #e27d5f, var(--secondary--color)); */
-  background: rgba(0, 0, 0, 0.105);
+  /* background: rgba(0, 0, 0, 0.105); */
 
-  backdrop-filter: blur(1rem);
+  /* backdrop-filter: blur(1rem); */
 
   @media (max-width: 40em) {
     --gap: 3em;
@@ -95,24 +101,24 @@ export const Active = styled.li`
   height: 1vh;
 
   /* :after {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 0;
-        bottom: -3px;
-        background: black;
-        height: 2px;
-        transition-property: width;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-out;
-    }
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 0;
+    bottom: -10px;
+    background: black;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
 
-    :hover:after,
-    :focus:after,
-    :active:after {
-        background: black;
-        width: 100%;
-    } */
+  :hover:after,
+  :focus:after,
+  :active:after {
+    background: black;
+    width: 100%;
+  } */
 `
 
 export const Link = styled(LinkS)`
