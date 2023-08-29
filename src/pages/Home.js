@@ -65,34 +65,42 @@ function Home({ scroll }) {
           <Container>
             <Wrapper>
               <Bio>
-                <Header>
-                  <Span>01</Span>About
-                </Header>
-                <About>
-                  I am a new grad software engineer based in the Bay Area. My
-                  love for coding began when I started my first project which
-                  involved rendering 3D graphics. This marked the first
-                  milestone of the possibilities of coding and introduced me to
-                  the behind the scene of how applications are made. I have
-                  always been curious to learn about the inner workings of
-                  technology which has led to my interest in learning how
-                  webpages function and how they are designed.
-                  <br />
-                  <br />
-                  Currently, I am looking for a new software engineering
-                  opportunities and am able to work from San Francisco or
-                  Seattle.
-                </About>
+                <div
+                  style={{
+                    paddingRight: `5rem`,
+                  }}
+                >
+                  <Header>
+                    <Span>01</Span>About
+                  </Header>
+                  <About>
+                    I am a new grad software engineer based in the Bay Area. My
+                    love for coding began when I started my first project which
+                    involved rendering 3D graphics. This marked the first
+                    milestone of the possibilities of coding and introduced me
+                    to the behind the scene of how applications are made. I have
+                    always been curious to learn about the inner workings of
+                    technology which has led to my interest in learning how
+                    webpages function and how they are designed.
+                    <br />
+                    <br />
+                    Currently, I am looking for a new software engineering
+                    opportunities and am able to work from San Francisco or
+                    Seattle.
+                  </About>
 
-                <Skills>
-                  <Skill>Languages: Java, Javascript, Python, C++, C#, C</Skill>
-                  <Skill>
-                    Frontend Tools: React (Native), Next.js, Node.js
-                  </Skill>
-                  <Skill>
-                    Backend Tools: Spring Boot, MySQL, MongoDB, Stripe, AWS
-                  </Skill>
-                </Skills>
+                  <Skills>
+                    <Skill>
+                      Languages: Java, Javascript, Python, C++, C#, C
+                    </Skill>
+                    <Skill>
+                      Frontend Tools: React (Native), Next.js, Node.js
+                    </Skill>
+                    <Skill>
+                      Backend Tools: Spring Boot, MySQL, MongoDB, Stripe, AWS
+                    </Skill>
+                  </Skills>
+                </div>
               </Bio>
               <Image
                 src={BuildingWebpage}
@@ -120,6 +128,7 @@ function Home({ scroll }) {
                       style={{
                         fontSize: `1rem`,
                         fontWeight: `normal`,
+                        marginBlock: `.5rem`,
                       }}
                     >
                       January 2022 - November 2022
@@ -129,7 +138,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
-                        fontSize: `1.25rem`,
+                        fontSize: `1.125rem`,
                       }}
                     >
                       <li>
@@ -171,7 +180,7 @@ function Home({ scroll }) {
             </Card>
             <Card>
               <Wrapper>
-                <Image src={SDSUAILab} alt="chess"></Image>
+                <Image src={SDSUAILab} alt="SdsuAILab"></Image>
                 <Info>
                   <Title>
                     SDSU AI Lab
@@ -179,6 +188,7 @@ function Home({ scroll }) {
                       style={{
                         fontSize: `1rem`,
                         fontWeight: `normal`,
+                        marginBlock: `.5rem`,
                       }}
                     >
                       September 2021 - January 2022
@@ -188,7 +198,7 @@ function Home({ scroll }) {
                     <ul
                       style={{
                         padding: `0`,
-                        fontSize: `1.25rem`,
+                        fontSize: `1.125rem`,
                       }}
                     >
                       <li>
@@ -232,7 +242,10 @@ function Home({ scroll }) {
                     Designed a chess game using Java and JFrame that allows two
                     players to play chess with implemented GUI. Implementing a
                     second iteration of the project that will parse through
-                    large sets of data from
+                    large sets of data from high-level chess players using the
+                    Chess.com API. Splitting the data into features and labels
+                    for a neural network to optimize chess moves in
+                    single-player mode.
                   </Description>
                   <Tools>
                     <Tool>Java</Tool>
@@ -252,7 +265,10 @@ function Home({ scroll }) {
                     bar, ammo capacity, and money. Designed and created the
                     level design and game layout for the player and zombie
                     models to navigate and interact to update metrics such as
-                    health points and ammo count
+                    health points and ammo count. Designed and created the level
+                    design and game layout for the player and zombie models to
+                    navigate and interact to update metrics such as health
+                    points and ammo count.
                   </Description>
                   <Tools>
                     <Tool>C#</Tool>

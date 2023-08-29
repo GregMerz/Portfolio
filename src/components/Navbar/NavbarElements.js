@@ -9,7 +9,7 @@ export const Header = styled.header`
   position: fixed;
   display: flex;
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
   gap: var(--gap, 1rem);
   align-items: center;
   justify-content: space-between;
@@ -40,6 +40,11 @@ export const Logo = styled.a`
     font-size: 26px;
     background: rgba(0, 0, 0, 0.14);
     /* filter: brightness(110%); */
+  }
+
+  @media (max-width: 40rem) {
+    font-size: 18px;
+    background: rgb(228, 228, 228);
   }
 `
 

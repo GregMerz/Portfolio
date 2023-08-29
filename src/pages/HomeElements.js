@@ -11,6 +11,10 @@ export const Page = styled.div`
   padding-block: ${({ num_pages }) => (num_pages === 'auto' ? '0' : '0')};
   position: relative;
   display: block;
+
+  @media (max-width: 40rem) {
+    padding: 0;
+  }
 `
 
 export const Content = styled.div`
@@ -28,6 +32,7 @@ export const Content = styled.div`
   }
   @media (max-width: 40rem) {
     padding: 3rem 0 0 0;
+    margin: 0 0 0 1.5rem;
   }
 `
 
@@ -69,7 +74,7 @@ export const Subtitle = styled.h1`
 export const Header = styled.div`
   position: relative;
   display: inline;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
@@ -111,6 +116,10 @@ export const Wrapper = styled.div`
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
+  @media (max-width: 40rem) {
+    display: block;
+  }
+
   /* :hover {
     cursor: default;
     transition: 0.2s ease-in-out;
@@ -151,6 +160,10 @@ export const Image = styled.img`
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
+  @media (max-width: 40rem) {
+    max-width: 90%;
+  }
+
   :hover {
     filter: brightness(90%);
     transition: 1s;
@@ -159,11 +172,13 @@ export const Image = styled.img`
 
 export const Info = styled.div`
   position: relative;
-  width: 35rem;
+  width: 32.5rem;
   /* text-align: ${({ position }) =>
     position === 'left' ? 'left' : 'right'}; */
   font-size: 1.5rem;
-  padding: 1rem 1rem;
+  padding: ${({ position }) =>
+    position === 'left' ? '1rem 3rem 0 1rem' : '1rem 1rem 0 3rem'};
+  /* padding: 1rem 3rem; */
 `
 
 export const Bio = styled.div`
@@ -178,14 +193,15 @@ export const About = styled.p`
   position: relative;
   margin: 0;
   height: auto;
-  padding: 1.5em 1.5em 1.5em 0;
-  font-size: 1.5rem;
+  padding-block: 1.5em;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
 `
 
 export const Skills = styled.div`
   font-family: Courier;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 0px;
 `
 
@@ -194,7 +210,7 @@ export const Skill = styled.p`
 `
 
 export const Title = styled.div`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
   font-family: 'Fira Sans';
@@ -206,18 +222,19 @@ export const Description = styled.p`
   border-radius: 10px;
   /* padding: 0.5em 0.5em; */
   margin: 2rem 0;
+  font-size: 1.125rem;
 `
 
 export const Tools = styled.div`
   margin: 0;
   font-family: Courier;
   font-weight: 500;
+  font-size: 1.25rem;
 `
 
 export const Tool = styled.p`
   display: inline;
   padding: 0 1em 0 0;
-  font-size: 1.25rem;
 `
 
 export const Record = styled.div`
