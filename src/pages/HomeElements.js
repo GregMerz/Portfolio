@@ -12,7 +12,7 @@ export const Page = styled.div`
   position: relative;
   display: block;
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     padding: 0;
   }
 `
@@ -24,7 +24,7 @@ export const Content = styled.div`
   position: relative;
   box-sizing: border-box;
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     padding: 3rem 0 0 0;
     margin: 0 1.5rem 0 1.5rem;
   }
@@ -56,7 +56,7 @@ export const Headline = styled.h1`
   font-family: Bubbly;
 
   :hover {
-    /* cursor: default; */
+    cursor: default;
     transition: 0.2s ease-in-out;
   }
 `
@@ -102,10 +102,10 @@ export const Section = styled.div`
   height: 100%;
   
   @media (max-width: 1440px) {
-    width: 1100px;
+    width: 1000px;
   }
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     width: auto;
     margin-inline: 1rem;
   }
@@ -123,7 +123,7 @@ export const Wrapper = styled.div`
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 
@@ -158,6 +158,10 @@ export const Card = styled.div`
   width: 100%;
 `
 
+export const HeadShot = styled.img`
+
+`
+
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
@@ -166,7 +170,7 @@ export const Image = styled.img`
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     width: 90%;
   }
 
@@ -183,7 +187,7 @@ export const Info = styled.div`
   padding: ${({ position }) =>
     position === 'left' ? '0 10% 0 0' : '0 0 0 10%'};
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     width: auto;
   }
 `
@@ -210,7 +214,7 @@ export const Skills = styled.div`
   letter-spacing: 0px;
   padding-bottom: 2rem;
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     font-size: 1rem;
   }
 `
@@ -242,7 +246,7 @@ export const Tools = styled.div`
   font-size: 1.25rem;
   padding-bottom: 3rem;
 
-  @media (max-width: 1296px) {
+  @media (max-width: 1200px) {
     font-size: 1rem;
   }
 `

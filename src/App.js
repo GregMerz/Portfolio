@@ -53,14 +53,19 @@ const useScroll = () => {
 
 function App() {
   const scroll = useScroll()
-  const [isCursorOn, useCursor] = useState(true)
+  const [isCursorOn, useCursor] = useState(false)
+  const [visible, setVisibility] = useState(false)
+
+  const toggle = () => {
+    setVisibility(!visible)
+  }
 
   return (
     <>
       <Router>
         {isCursorOn ? <Cursor /> : <></>}
-        <Sidebar scroll={scroll} />
-        <Navbar scroll={scroll} />
+        <Sidebar scroll={scroll} visible={visible}/>
+        <Navbar scroll={scroll} visible={visible} toggle={toggle}/>
         <Home scroll={scroll} />
       </Router>
     </>

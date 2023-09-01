@@ -15,17 +15,11 @@ import { useState } from 'react'
 import Apple from '../../images/greg.png'
 import Hamburger from '../../images/menu_icon.jpg'
 
-function Navbar({ scroll }) {
-  const [visible, setVisibility] = useState(false)
-
-  const toggle = () => {
-    setVisibility(!visible)
-  }
-
+function Navbar({ scroll, visible, toggle }) {
   return (
     <Header>
       <div>
-        <Logo href="/">Greg Merz</Logo>
+        <Logo visible={visible} href="/">Greg Merz</Logo>
       </div>
 
       <HamburgerMenuWrapper onClick={toggle}>

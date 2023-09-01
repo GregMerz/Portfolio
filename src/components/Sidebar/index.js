@@ -11,13 +11,13 @@ import Signature from '../../images/signature.png'
 
 import { animateScroll as scroll } from 'react-scroll'
 
-function Sidebar({ scroll }) {
+function Sidebar({ scroll, visible }) {
   const toggleHome = () => {
     scroll.scrollToTop()
   }
 
   return (
-    <SidebarContainer scroll={scroll}>
+    <SidebarContainer scroll={scroll} visible={visible}>
       <SidebarWrapper>
         <SidebarLink
           href="https://www.linkedin.com/in/greg-merz-228756198/"

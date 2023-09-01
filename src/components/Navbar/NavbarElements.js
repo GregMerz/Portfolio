@@ -17,8 +17,8 @@ export const Header = styled.header`
   z-index: 99;
   top: 0rem;
 
-  @media (max-width: 40em) {
-    margin-top: 4rem;
+  @media (max-width: 920px) {
+    margin-top: 2rem;
   }
 `
 
@@ -39,14 +39,15 @@ export const Logo = styled.a`
   border-right: 5px solid var(--shadow--color); */
 
   :hover {
-    cursor: none;
     font-size: 26px;
     /* background: rgba(0, 0, 0, 0.14); */
     /* filter: brightness(110%); */
   }
 
-  @media (max-width: 1024px) {
-    display: none;
+  @media (max-width: 920px) {
+    opacity: ${({ visible }) =>
+      visible ? '1' : '0'};
+    transition: 0.35s ease-in-out;
   }
 `
 
@@ -71,14 +72,14 @@ export const Wrapper = styled.ul`
 
   /* backdrop-filter: blur(1rem); */
 
-  @media (max-width: 40em) {
+  @media (max-width: 920px) {
     --gap: 3em;
 
     position: fixed;
     inset: 0 0 0 30%;
     z-index: 1000;
 
-    border-radius: 0;
+    /* border-radius: 0; */
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
 
@@ -87,7 +88,7 @@ export const Wrapper = styled.ul`
     transition: 0.35s ease-in-out;
   }
 
-  @media (min-width: 40em) {
+  @media (min-width: 920px) {
     --gap: clamp(1.5rem, 5vw, 3rem);
     padding-block: 2rem;
     padding-inline: clamp(1.5em, 4vw, 5rem);
@@ -129,7 +130,7 @@ export const Link = styled(LinkS)`
     text-transform: uppercase;
     letter-spacing: 2px;
     top: -5px;
-    /* cursor: pointer; */
+    cursor: pointer;
     transition: 0.2s ease-in-out;
     /* color: ${({ scroll, start, end }) =>
       scroll.y >= start * window.innerHeight &&
@@ -141,6 +142,11 @@ export const Link = styled(LinkS)`
       scroll.y < end * window.innerHeight
         ? '110%'
         : '100%'};
+
+    @media (max-width: 920px) {
+      text-align: start;
+      padding-left: 3rem;
+    }
 
     :hover {
         /* color: var(--bright--green); */
@@ -167,7 +173,7 @@ export const Span = styled.span`
 export const HamburgerMenuWrapper = styled.div`
   display: none;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 920px) {
     display: block;
     position: absolute;
     right: 2rem;
