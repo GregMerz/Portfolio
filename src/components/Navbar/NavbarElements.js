@@ -45,9 +45,7 @@ export const Logo = styled.a`
     /* filter: brightness(110%); */
   }
 
-  @media (max-width: 40rem) {
-    font-size: 18px;
-    background: rgb(228, 228, 228);
+  @media (max-width: 1024px) {
     display: none;
   }
 `
@@ -161,9 +159,9 @@ export const Span = styled.span`
   font-weight: 600;
   margin-inline-end: 0.75em;
 
-  @media (min-width: 40em) and (max-width: 60em) {
+  /* @media (min-width: 40em) and (max-width: 60em) {
     display: none;
-  }
+  } */
 `
 
 export const HamburgerMenuWrapper = styled.div`

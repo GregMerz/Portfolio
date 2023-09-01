@@ -11,11 +11,11 @@ export const SidebarContainer = styled.div`
   left: 0;
   z-index: 10;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     width: 75px;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     display: none;
   }
   /* border-right: 3px solid var(--secondary--color); */
@@ -81,7 +81,7 @@ export const SidebarLink = styled.a`
     /* background: rgba(0, 0, 0, 0.14); */
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     height: 3.5rem;
   }
 `

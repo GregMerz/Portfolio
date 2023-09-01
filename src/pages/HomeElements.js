@@ -12,7 +12,7 @@ export const Page = styled.div`
   position: relative;
   display: block;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     padding: 0;
   }
 `
@@ -20,18 +20,11 @@ export const Page = styled.div`
 export const Content = styled.div`
   display: block;
   height: 100%;
-  padding: 3rem 3rem 0 3rem;
-  margin: 0 0 0 3.5rem;
+  padding: 3rem 3rem 0 5rem;
   position: relative;
-  /* -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box;  */
   box-sizing: border-box;
 
-  @media (min-width: 1441px) {
-    margin-inline: 15rem;
-  }
-
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     padding: 3rem 0 0 0;
     margin: 0 1.5rem 0 1.5rem;
   }
@@ -103,12 +96,25 @@ export const Header = styled.div`
   } */
 `
 
+export const Section = styled.div`
+  width: 1220px;
+  margin-inline: auto;
+  height: 100%;
+  
+  @media (max-width: 1440px) {
+    width: 1100px;
+  }
+
+  @media (max-width: 1296px) {
+    width: auto;
+    margin-inline: 1rem;
+  }
+`
+
 export const Wrapper = styled.div`
   display: flex;
-  /* flex-direction: column; */
   height: 100%;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -117,7 +123,7 @@ export const Wrapper = styled.div`
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     display: block;
   }
 
@@ -148,21 +154,20 @@ export const Wrapper = styled.div`
 export const Card = styled.div`
   position: relative;
   height: auto;
-  margin: 2rem 0 2rem 0;
+  padding-block: 3rem;
   width: 100%;
 `
 
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  max-width: 45%;
-  max-height: 75%;
+  width: 45%;
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
-  @media (max-width: 40rem) {
-    max-width: 90%;
+  @media (max-width: 1296px) {
+    width: 90%;
   }
 
   :hover {
@@ -173,13 +178,12 @@ export const Image = styled.img`
 
 export const Info = styled.div`
   position: relative;
-  width: 32.5rem;
+  width: 45%;
   font-size: 1.5rem;
   padding: ${({ position }) =>
-    position === 'left' ? '1rem 3rem 0 1.5rem' : '1rem 1.5rem 0 3rem'};
-  /* padding: 1rem 3rem; */
+    position === 'left' ? '0 10% 0 0' : '0 0 0 10%'};
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     width: auto;
   }
 `
@@ -188,15 +192,13 @@ export const Bio = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-height: 80%;
-  min-width: 50%;
 `
 
 export const About = styled.p`
   position: relative;
   margin: 0;
   height: auto;
-  padding-block: 1.5em;
+  padding-block: 2rem;
   font-size: 1.25rem;
   line-height: 1.625rem;
 `
@@ -208,7 +210,7 @@ export const Skills = styled.div`
   letter-spacing: 0px;
   padding-bottom: 2rem;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     font-size: 1rem;
   }
 `
@@ -240,7 +242,7 @@ export const Tools = styled.div`
   font-size: 1.25rem;
   padding-bottom: 3rem;
 
-  @media (max-width: 40rem) {
+  @media (max-width: 1296px) {
     font-size: 1rem;
   }
 `
@@ -275,7 +277,11 @@ export const Record = styled.div`
 // transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
 
 export const SignatureName = styled.div`
-  font-size: 120px;
+  font-size: 7.5rem;
+
+  @media (max-width: 1440px) {
+    font-size: 7rem;
+  }
 `
 
 export const TimeLine = styled.div`

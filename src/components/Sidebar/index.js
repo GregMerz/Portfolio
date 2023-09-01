@@ -29,7 +29,7 @@ function Sidebar({ scroll }) {
           <SidebarImg src={GitHub} alt="GitHub"></SidebarImg>
         </SidebarLink>
         <SidebarLink
-          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZWxDcgmwcZfBrXKZSvzjmCWfwGXRpFWFlFsMKnHQhngNWVBPZFDXSMjDRcBxDlswszbBB"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=merz.greg1@gmail.com"
           target="_blank"
         >
           <SidebarImg src={Email} alt="Email"></SidebarImg>
