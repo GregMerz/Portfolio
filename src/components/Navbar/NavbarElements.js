@@ -29,7 +29,7 @@ export const Logo = styled.a`
   font-family: Simply Glamorous;
   text-decoration: none;
   /* background: linear-gradient(0.25turn, var(--secondary--color), #e27d5f); */
-  /* background: rgba(0, 0, 0, 0.12); */
+  background: white;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
