@@ -23,7 +23,6 @@ function Navbar({ scroll, visible, toggle }) {
       </HamburgerMenuWrapper>
 
       <Nav>
-        
         <Wrapper visible={visible} data-visible="false">
             <Active>
               <Link

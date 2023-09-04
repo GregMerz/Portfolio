@@ -78,9 +78,13 @@ export const Wrapper = styled.ul`
     --gap: 3em;
 
     position: fixed;
-    inset: 0 0 0 auto;
+    /* inset: 0 0 0 auto; */
     width: calc(60% - 4em);
     z-index: 1000;
+
+    right: 0;
+    top: 0;
+    bottom: 0;
 
     background: #e4e4e4;
     border: 0;
