@@ -132,6 +132,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 720px) {
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   /* :hover {
