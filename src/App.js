@@ -64,7 +64,7 @@ function App() {
     <>
       <Router>
         {isCursorOn ? <Cursor /> : <></>}
-        <Sidebar scroll={scroll} visible={visible}/>
+        <Sidebar scroll={scroll} visible={visible} width={window.innerWidth}/>
         <Navbar scroll={scroll} visible={visible} toggle={toggle}/>
         <Home scroll={scroll} />
       </Router>

@@ -51,7 +51,8 @@ export const Logo = styled.a`
   }
 `
 
-export const Nav = styled.nav``
+export const Nav = styled.nav`
+`
 
 export const Wrapper = styled.ul`
   display: flex;
@@ -76,7 +77,8 @@ export const Wrapper = styled.ul`
     --gap: 3em;
 
     position: fixed;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 auto;
+    width: calc(60% - 4em);
     z-index: 1000;
 
     /* border-radius: 0; */
@@ -145,7 +147,7 @@ export const Link = styled(LinkS)`
 
     @media (max-width: 920px) {
       text-align: start;
-      padding-left: 3rem;
+      padding-left: min(8vw, 5rem);
     }
 
     :hover {
@@ -183,6 +185,10 @@ export const HamburgerMenuWrapper = styled.div`
   }
 `
 
-export const MenuIcon = styled(FaBars)``
+export const MenuIcon = styled(FaBars)`
+  cursor: pointer;
+`
 
-export const CloseIcon = styled(FaTimes)``
+export const CloseIcon = styled(FaTimes)`
+  cursor: pointer;
+`

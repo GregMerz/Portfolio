@@ -97,12 +97,13 @@ export const Header = styled.div`
 `
 
 export const Section = styled.div`
-  width: 1220px;
+  /* width: 1220px; */
+  width: ${({ size }) => size}px;
   margin-inline: auto;
   height: 100%;
   
-  @media (max-width: 1440px) {
-    width: 1000px;
+  @media (max-width: 1550px) {
+    width: ${({ size }) => size - 300}px;
   }
 
   @media (max-width: 1200px) {
@@ -124,7 +125,7 @@ export const Wrapper = styled.div`
   letter-spacing: 1px;
 
   @media (max-width: 1200px) {
-    display: block;
+    display: ${({ isFlex }) => isFlex ? 'flex' : 'block'};
   }
 
   /* :hover {
@@ -154,7 +155,7 @@ export const Wrapper = styled.div`
 export const Card = styled.div`
   position: relative;
   height: auto;
-  padding-block: 3rem;
+  padding-top: 3rem;
   width: 100%;
 `
 
@@ -166,12 +167,14 @@ export const Image = styled.img`
   position: relative;
   border-radius: 10px;
   width: 45%;
+  /* max-height: 75%; */
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
   @media (max-width: 1200px) {
     width: 90%;
+    margin-inline: auto;
   }
 
   :hover {
@@ -185,10 +188,11 @@ export const Info = styled.div`
   width: 45%;
   font-size: 1.5rem;
   padding: ${({ position }) =>
-    position === 'left' ? '0 10% 0 0' : '0 0 0 10%'};
+    position === 'left' ? '0 10% 0 1.5rem' : '0 1.5rem 0 10%'};
 
   @media (max-width: 1200px) {
     width: auto;
+    padding-inline: 1.5rem;
   }
 `
 
@@ -240,11 +244,13 @@ export const Description = styled.p`
 `
 
 export const Tools = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   font-family: Courier;
   font-weight: 500;
   font-size: 1.25rem;
-  padding-bottom: 3rem;
+  margin-block: 2rem;
 
   @media (max-width: 1200px) {
     font-size: 1rem;
@@ -253,7 +259,8 @@ export const Tools = styled.div`
 
 export const Tool = styled.p`
   display: inline;
-  padding: 0 1em 0 0;
+  padding-right: 1em;
+  margin: 0 0 .5rem 0;
 `
 
 export const Record = styled.div`
@@ -281,10 +288,10 @@ export const Record = styled.div`
 // transform: rotate(${-(degree * i - arc / 2)}deg) translate(0, 70%);
 
 export const SignatureName = styled.div`
-  font-size: 7.5rem;
+  font-size: 6rem;
 
-  @media (max-width: 1440px) {
-    font-size: 7rem;
+  @media (max-width: 1550px) {
+    font-size: 5rem;
   }
 `
 

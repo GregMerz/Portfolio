@@ -35,12 +35,12 @@ function Home({ scroll }) {
     <Homepage>
       <Page num_pages={1}>
         <Content>
-          <Section>
-            <Wrapper>
+          <Section size='1220'>
+            <Wrapper isFlex="true">
               <Info position="left">
                 <div
                   style={{
-                    fontSize: `3rem`,
+                    fontSize: `2.5rem`,
                   }}
                 >
                   Hello, my name is
@@ -67,7 +67,7 @@ function Home({ scroll }) {
       <Page id="about" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section>
+            <Section size='1220'>
               <Wrapper>
                 <Info position='left'>
                   <Bio>
@@ -117,7 +117,7 @@ function Home({ scroll }) {
       <Page id="experience" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section>
+            <Section size='1350'>
               <Header>
                 <Span>02</Span>Experience
               </Header>
@@ -174,8 +174,7 @@ function Home({ scroll }) {
                     <Tool>MySQL</Tool>
                     <Tool>MongoDB</Tool>
                     <Tool>React</Tool>
-                    {/* <Tool>MySQL</Tool>
-                    <Tool>Next.js</Tool> */}
+                    <Tool>Next.js</Tool>
                   </Tools>
                 </Info>
                 <Image src={WalnutMeetup} alt="chess"></Image>
@@ -234,13 +233,13 @@ function Home({ scroll }) {
       <Page id="projects" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section>
+            <Section size='1350'>
               <Header>
                 <Span>03</Span>Projects
               </Header>
               <Card>
                 <Wrapper>
-                  <Image src={ChessImg} alt="chess"></Image>
+                  
                   <Info>
                     <Title>Chess</Title>
                     <Description>
@@ -258,6 +257,7 @@ function Home({ scroll }) {
                       <Tool>RESTful API</Tool>
                     </Tools>
                   </Info>
+                  <Image src={ChessImg} alt="chess"></Image>
                 </Wrapper>
               </Card>
               <Card>
