@@ -12,7 +12,7 @@ export const Page = styled.div`
   position: relative;
   display: block;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     padding: 0;
   }
 `
@@ -24,7 +24,7 @@ export const Content = styled.div`
   position: relative;
   box-sizing: border-box;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     padding: 3rem 0 0 0;
     margin: 0;
   }
@@ -97,16 +97,16 @@ export const Header = styled.div`
 `
 
 export const Section = styled.div`
-  /* width: 1220px; */
+  /* width: 1240px; */
   width: ${({ size }) => size}px;
   margin-inline: auto;
   height: 100%;
-  
+
   @media (max-width: 1550px) {
-    width: ${({ size }) => size - 300}px;
+    width: 1050px;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     width: auto;
     margin-inline: 2rem;
   }
@@ -124,10 +124,14 @@ export const Wrapper = styled.div`
   font-family: 'Fira Sans';
   letter-spacing: 1px;
 
-  @media (max-width: 1200px) {
-    display: ${({ isFlex }) => isFlex ? 'flex' : 'block'};
+  @media (max-width: 1240px) {
+    display: ${({ isFlex }) => (isFlex ? 'flex' : 'block')};
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (max-width: 720px) {
     flex-direction: column;
-    justify-content: space-evenly;
   }
 
   /* :hover {
@@ -164,21 +168,21 @@ export const Card = styled.div`
 export const Headshot = styled.img`
   position: relative;
   border-radius: 10px;
-  width: 45%;
+  width: 46.25%;
   /* max-height: 75%; */
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     width: 40%;
     margin-inline: 5%;
   }
-  @media (max-width: 920px) {
+  /* @media (max-width: 920px) {
     width: 60%;
-  }
-  @media (max-width: 700px) {
-    width: 90%;
+  } */
+  @media (max-width: 720px) {
+    width: 20rem;
   }
 
   :hover {
@@ -190,16 +194,16 @@ export const Headshot = styled.img`
 export const Image = styled.img`
   position: relative;
   border-radius: 10px;
-  width: 45%;
+  width: 46.25%;
   /* max-height: 75%; */
   filter: brightness(75%);
   transition: 1s;
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     /* max-height: 40%; */
-    width: 90%;
-    margin-inline: 5%;
+    width: 75%;
+    margin-inline: 7.5%;
   }
 
   :hover {
@@ -210,12 +214,12 @@ export const Image = styled.img`
 
 export const Info = styled.div`
   position: relative;
-  width: 45%;
+  width: 46.25%;
   font-size: 1.5rem;
   padding: ${({ position }) =>
-    position === 'left' ? '0 10% 0 1.5rem' : '0 1.5rem 0 10%'};
+    position === 'left' ? '0 7.5% 0 1.5rem' : '0 1.5rem 0 7.5%'};
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     width: auto;
     padding-inline: 1.5rem;
   }
@@ -243,7 +247,7 @@ export const Skills = styled.div`
   letter-spacing: 0px;
   padding-bottom: 2rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     font-size: 1rem;
   }
 `
@@ -276,8 +280,9 @@ export const Tools = styled.div`
   font-weight: 500;
   font-size: 1.25rem;
   margin-block: 2rem;
+  font-size: 1.125rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     font-size: 1rem;
   }
 `
@@ -285,7 +290,7 @@ export const Tools = styled.div`
 export const Tool = styled.p`
   display: inline;
   padding-right: 1em;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 `
 
 export const Record = styled.div`
@@ -319,7 +324,7 @@ export const SignatureName = styled.div`
     font-size: 5rem;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     font-size: 4rem;
   }
 `

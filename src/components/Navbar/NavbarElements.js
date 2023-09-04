@@ -45,15 +45,13 @@ export const Logo = styled.a`
   }
 
   @media (max-width: 920px) {
-    opacity: ${({ visible }) =>
-      visible ? '1' : '0'};
+    opacity: ${({ visible }) => (visible ? '1' : '0')};
     transition: 0.35s ease-in-out;
     font-size: 20px;
   }
 `
 
-export const Nav = styled.nav`
-`
+export const Nav = styled.nav``
 
 export const Wrapper = styled.ul`
   display: flex;
@@ -86,7 +84,7 @@ export const Wrapper = styled.ul`
     top: 0;
     bottom: 0;
 
-    background: #e4e4e4;
+    background: #f0f0f0;
     border: 0;
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
@@ -193,6 +191,8 @@ export const HamburgerMenuWrapper = styled.div`
 
 export const MenuIcon = styled(FaBars)`
   cursor: pointer;
+  background: white;
+  padding: 0.25rem;
 `
 
 export const CloseIcon = styled(FaTimes)`

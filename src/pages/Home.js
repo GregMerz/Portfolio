@@ -18,7 +18,7 @@ import {
   Skills,
   Skill,
   Section,
-  Headshot
+  Headshot,
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
@@ -36,7 +36,7 @@ function Home({ scroll }) {
     <Homepage>
       <Page num_pages={1}>
         <Content>
-          <Section size='1220'>
+          <Section size="1240">
             <Wrapper isFlex="true">
               <Info position="left">
                 <div
@@ -68,22 +68,24 @@ function Home({ scroll }) {
       <Page id="about" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section size='1220'>
+            <Section size="1240">
               <Wrapper>
-                <Info position='left'>
+                <Info position="left">
                   <Bio>
                     <Header>
                       <Span>01</Span>About
                     </Header>
                     <About>
-                      I am a new grad software engineer based in the Bay Area. My
-                      love for coding began when I started my first project which
-                      involved me learning how to rendering 3D graphics. This marked the first
-                      milestone of the possibilities of coding and introduced me
-                      to the behind the scene of how applications are made. I have
-                      always been curious to learn about the inner workings of
-                      technology which has led to my interest in learning how
-                      webpages function and how they are designed.
+                      Hello everyone! My name is Greg and I am a new grad
+                      software engineer based in the Bay Area. My love for
+                      coding began when I started my first project where I was
+                      learning how to rendering 3D graphics. This marked the
+                      first milestone of the possibilities of coding and
+                      introduced me to the behind the scenes of how applications
+                      are made. I have always been curious to learn about the
+                      inner workings of technology which has led to my interest
+                      in learning how webpages function and how they are
+                      designed.
                       <br />
                       <br />
                       Currently, I am looking for new software engineering
@@ -118,68 +120,70 @@ function Home({ scroll }) {
       <Page id="experience" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section size='1350'>
+            <Section size="1350">
               <Header>
                 <Span>02</Span>Experience
               </Header>
               <Card>
-              <Wrapper>
-                <Info position="left">
-                  <Title>
-                    Walnut
-                    {/* <img src={WalnutLogo} alt="Walnut" /> */}
-                    <p
-                      style={{
-                        fontSize: `1rem`,
-                        fontWeight: `normal`,
-                        marginBlock: `.5rem`,
-                      }}
-                    >
-                      January 2022 - November 2022
-                    </p>
-                  </Title>
-                  <Description>
-                    <ul
-                      style={{
-                        padding: `0`,
-                        fontSize: `1.125rem`,
-                      }}
-                    >
-                      <li>
-                        Software Engineer on the Acquisition and Retention team
-                        which specialized in innovating upon our existing
-                        products by improving the aesthetics, usability, and
-                        functionality
-                      </li>
-                      <li>
-                        Decreased the amount of time to fix bugs by 30% by
-                        implementing a monitoring system that prints out a log
-                        of the data being sent in and out by third-party systems
-                      </li>
-                      <li>
-                        Improved the payment infrastructure with Stripe’s
-                        third-party system by storing new patient and
-                        transactional data in a database which enabled the
-                        product release of payment plans for medical bills
-                      </li>
-                      <li>
-                        Collaborated with our design team to enhance the layout
-                        of the product website by designing a sidebar menu with
-                        page navigation and implementing a table filter
-                      </li>
-                    </ul>
-                  </Description>
-                  <Tools>
-                    <Tool>Java</Tool>
-                    <Tool>SpringBoot</Tool>
-                    <Tool>MySQL</Tool>
-                    <Tool>MongoDB</Tool>
-                    <Tool>React</Tool>
-                    <Tool>Next.js</Tool>
-                  </Tools>
-                </Info>
-                <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
-              </Wrapper>
+                <Wrapper>
+                  <Info position="left">
+                    <Title>
+                      Walnut
+                      {/* <img src={WalnutLogo} alt="Walnut" /> */}
+                      <p
+                        style={{
+                          fontSize: `1rem`,
+                          fontWeight: `normal`,
+                          marginBlock: `.5rem`,
+                        }}
+                      >
+                        January 2022 - November 2022
+                      </p>
+                    </Title>
+                    <Description>
+                      <ul
+                        style={{
+                          padding: `0`,
+                          fontSize: `1.125rem`,
+                        }}
+                      >
+                        <li>
+                          Software Engineer on the Acquisition and Retention
+                          team which specialized in innovating upon our existing
+                          products by improving the aesthetics, usability, and
+                          functionality
+                        </li>
+                        <li>
+                          Decreased the amount of time to fix bugs by 30% by
+                          implementing a monitoring system that prints out a log
+                          of the data being sent in and out by third-party
+                          systems
+                        </li>
+                        <li>
+                          Improved the payment infrastructure with Stripe’s
+                          third-party system by storing new patient and
+                          transactional data in a database which enabled the
+                          product release of payment plans for medical bills
+                        </li>
+                        <li>
+                          Collaborated with our design team to enhance the
+                          layout of the product website by designing a sidebar
+                          menu with page navigation and implementing a table
+                          filter
+                        </li>
+                      </ul>
+                    </Description>
+                    <Tools>
+                      <Tool>Java</Tool>
+                      <Tool>SpringBoot</Tool>
+                      <Tool>MySQL</Tool>
+                      <Tool>MongoDB</Tool>
+                      <Tool>React</Tool>
+                      <Tool>Next.js</Tool>
+                    </Tools>
+                  </Info>
+                  <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
+                </Wrapper>
               </Card>
               <Card>
                 <Wrapper>
@@ -234,7 +238,7 @@ function Home({ scroll }) {
       <Page id="projects" num_pages={'auto'}>
         <Content>
           <Container>
-            <Section size='1350'>
+            <Section size="1350">
               <Header>
                 <Span>03</Span>Projects
               </Header>
@@ -243,13 +247,11 @@ function Home({ scroll }) {
                   <Info position="left">
                     <Title>Chess</Title>
                     <Description>
-                      Designed a chess game using Java and JFrame that allows two
-                      players to play chess with implemented GUI. Implementing a
-                      second iteration of the project that will parse through
-                      large sets of data from high-level chess players using the
-                      Chess.com API. Splitting the data into features and labels
-                      for a neural network to optimize chess moves in
-                      single-player mode.
+                      Designed a chess game using Java and JFrame that allows
+                      two players to play chess with implemented GUI.
+                      Implementing a second iteration of the project that will
+                      parse through large sets of data from high-level chess
+                      players using the Chess.com API.
                     </Description>
                     <Tools>
                       <Tool>Java</Tool>
@@ -265,15 +267,13 @@ function Home({ scroll }) {
                   <Info position="left">
                     <Title>Quarantine</Title>
                     <Description>
-                      Programmed a singleton instance of the player and created a
-                      UI to display the player instance’s metrics such as a health
-                      bar, ammo capacity, and money. Designed and created the
-                      level design and game layout for the player and zombie
+                      Created this game that is similar to Call of Duty zombies.
+                      Programmed a singleton instance of the player and created
+                      a UI to display the player instance’s metrics such as a
+                      health bar, ammo capacity, and money. Designed and created
+                      the level design and game layout for the player and zombie
                       models to navigate and interact to update metrics such as
-                      health points and ammo count. Designed and created the level
-                      design and game layout for the player and zombie models to
-                      navigate and interact to update metrics such as health
-                      points and ammo count.
+                      health points and ammo count.
                     </Description>
                     <Tools>
                       <Tool>C#</Tool>
@@ -284,7 +284,7 @@ function Home({ scroll }) {
                   <Image src={Quarantine} alt="quarantine"></Image>
                 </Wrapper>
               </Card>
-              </Section>
+            </Section>
           </Container>
         </Content>
       </Page>

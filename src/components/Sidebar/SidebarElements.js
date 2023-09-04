@@ -11,13 +11,12 @@ export const SidebarContainer = styled.div`
   left: 0;
   z-index: 1000000;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     opacity: 0;
   }
 
   @media (max-width: 920px) {
-    opacity: ${({ visible }) =>
-      visible ? '1' : '0'};
+    opacity: ${({ visible }) => (visible ? '1' : '0')};
     transition: 0.35s ease-out;
     top: auto;
     bottom: 0;
@@ -55,7 +54,7 @@ export const SidebarWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   position: absolute;
   left: 0;
   bottom: 0;
