@@ -41,7 +41,7 @@ function Home({ scroll }) {
               <Info position="left">
                 <div
                   style={{
-                    fontSize: `2.5rem`,
+                    fontSize: `2.25rem`,
                   }}
                 >
                   Hello, my name is

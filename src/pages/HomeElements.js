@@ -318,6 +318,10 @@ export const SignatureName = styled.div`
   @media (max-width: 1550px) {
     font-size: 5rem;
   }
+
+  @media (max-width: 800px) {
+    font-size: 4rem;
+  }
 `
 
 export const TimeLine = styled.div`
