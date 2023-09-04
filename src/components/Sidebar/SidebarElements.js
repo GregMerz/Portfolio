@@ -18,7 +18,7 @@ export const SidebarContainer = styled.div`
   @media (max-width: 920px) {
     opacity: ${({ visible }) =>
       visible ? '1' : '0'};
-    transition: 0.35s ease-in-out;
+    transition: 0.35s ease-out;
     top: auto;
     bottom: 0;
     left: auto;
@@ -64,11 +64,11 @@ export const SidebarWrapper = styled.div`
 
   @media (max-width: 920px) {
     flex-direction: row;
-    width: 45%;
+    width: 40%;
     left: auto;
     right: 0;
     top: 0;
-    padding-inline: 7.5%;
+    padding-inline: 10%;
     align-items: center;
   }
 
@@ -99,7 +99,6 @@ export const SidebarLink = styled.a`
     border: none;
     background: none;
     margin: 0;
-    transition: none;
   }
 
   :hover {

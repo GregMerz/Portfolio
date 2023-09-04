@@ -26,7 +26,7 @@ export const Content = styled.div`
 
   @media (max-width: 1200px) {
     padding: 3rem 0 0 0;
-    margin: 0 1.5rem 0 1.5rem;
+    margin: 0;
   }
 `
 
@@ -108,7 +108,7 @@ export const Section = styled.div`
 
   @media (max-width: 1200px) {
     width: auto;
-    margin-inline: 1rem;
+    margin-inline: 2rem;
   }
 `
 
@@ -126,6 +126,8 @@ export const Wrapper = styled.div`
 
   @media (max-width: 1200px) {
     display: ${({ isFlex }) => isFlex ? 'flex' : 'block'};
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   /* :hover {
@@ -174,7 +176,7 @@ export const Image = styled.img`
 
   @media (max-width: 1200px) {
     width: 90%;
-    margin-inline: auto;
+    margin-inline: 5%;
   }
 
   :hover {

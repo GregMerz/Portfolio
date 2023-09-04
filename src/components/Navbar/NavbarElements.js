@@ -48,6 +48,7 @@ export const Logo = styled.a`
     opacity: ${({ visible }) =>
       visible ? '1' : '0'};
     transition: 0.35s ease-in-out;
+    font-size: 20px;
   }
 `
 

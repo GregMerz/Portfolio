@@ -239,8 +239,7 @@ function Home({ scroll }) {
               </Header>
               <Card>
                 <Wrapper>
-                  
-                  <Info>
+                  <Info position="left">
                     <Title>Chess</Title>
                     <Description>
                       Designed a chess game using Java and JFrame that allows two
