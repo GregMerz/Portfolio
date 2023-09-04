@@ -99,10 +99,7 @@ export const SidebarLink = styled.a`
     border: none;
     background: none;
     margin: 0;
-
-    :hover {
-      
-    }
+    transition: none;
   }
 
   :hover {
