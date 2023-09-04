@@ -82,7 +82,8 @@ export const Wrapper = styled.ul`
     width: calc(60% - 4em);
     z-index: 1000;
 
-    /* border-radius: 0; */
+    background: #e4e4e4;
+    border: 0;
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
 

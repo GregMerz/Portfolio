@@ -17,7 +17,8 @@ import {
   Wrapper,
   Skills,
   Skill,
-  Section
+  Section,
+  Headshot
 } from './HomeElements'
 
 import { Span } from '../components/Navbar/NavbarElements.js'
@@ -44,10 +45,10 @@ function Home({ scroll }) {
                   }}
                 >
                   Hello, my name is
-                  <SignatureName>Greg Merz</SignatureName>
                 </div>
+                <SignatureName>Greg Merz</SignatureName>
               </Info>
-              <Image src={Profile} alt="quarantine" position="left"></Image>
+              <Headshot src={Profile} alt="quarantine"></Headshot>
             </Wrapper>
           </Section>
         </Content>
@@ -177,7 +178,7 @@ function Home({ scroll }) {
                     <Tool>Next.js</Tool>
                   </Tools>
                 </Info>
-                <Image src={WalnutMeetup} alt="chess"></Image>
+                <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
               </Wrapper>
               </Card>
               <Card>
@@ -217,9 +218,9 @@ function Home({ scroll }) {
                       </ul>
                     </Description>
                     <Tools>
-                      <Tool>Java</Tool>
-                      <Tool>JFrame</Tool>
-                      <Tool>Chess.com API</Tool>
+                      <Tool>C++</Tool>
+                      <Tool>Unreal Engine</Tool>
+                      <Tool>GitHub</Tool>
                     </Tools>
                   </Info>
                   <Image src={SDSUAILab} alt="SdsuAILab"></Image>

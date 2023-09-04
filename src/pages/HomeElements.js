@@ -127,7 +127,7 @@ export const Wrapper = styled.div`
   @media (max-width: 1200px) {
     display: ${({ isFlex }) => isFlex ? 'flex' : 'block'};
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   /* :hover {
@@ -161,8 +161,30 @@ export const Card = styled.div`
   width: 100%;
 `
 
-export const HeadShot = styled.img`
+export const Headshot = styled.img`
+  position: relative;
+  border-radius: 10px;
+  width: 45%;
+  /* max-height: 75%; */
+  filter: brightness(75%);
+  transition: 1s;
+  /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
+  @media (max-width: 1200px) {
+    width: 40%;
+    margin-inline: 5%;
+  }
+  @media (max-width: 920px) {
+    width: 60%;
+  }
+  @media (max-width: 700px) {
+    width: 90%;
+  }
+
+  :hover {
+    filter: brightness(90%);
+    transition: 1s;
+  }
 `
 
 export const Image = styled.img`
@@ -175,6 +197,7 @@ export const Image = styled.img`
   /* right: ${({ position }) => (position === 'left' ? 0 : 'auto')}; */
 
   @media (max-width: 1200px) {
+    /* max-height: 40%; */
     width: 90%;
     margin-inline: 5%;
   }
