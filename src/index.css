@@ -45,6 +45,11 @@
   --light--text: white;
 }
 
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+
 body {
   margin: 0;
   font-family: 'Playfair Display';
@@ -52,6 +57,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--primary--color);
   overflow-x: hidden;
+
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
 }
 
 .app-cursor {
