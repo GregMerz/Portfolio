@@ -9,7 +9,7 @@ export const SidebarContainer = styled.div`
   display: grid;
   top: 0;
   left: 0;
-  z-index: 1000000;
+  z-index: 20;
 
   @media (max-width: 1240px) {
     opacity: 0;
@@ -24,6 +24,7 @@ export const SidebarContainer = styled.div`
     right: 0;
     height: 120px;
     width: 100vw;
+    z-index: 1000000;
   }
   /* border-right: 3px solid var(--secondary--color); */
 
@@ -98,6 +99,10 @@ export const SidebarLink = styled.a`
     border: none;
     background: none;
     margin: 0;
+
+    :hover {
+      width: 100%;
+    }
   }
 
   :hover {
