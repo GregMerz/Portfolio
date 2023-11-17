@@ -4,7 +4,7 @@ export const SidebarContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 120px;
-  height: 100vh;
+  height: 100svh;
   position: fixed;
   display: grid;
   top: 0;
