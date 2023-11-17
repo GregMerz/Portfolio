@@ -23,6 +23,7 @@ import {
 
 import { Span } from '../components/Navbar/NavbarElements.js'
 import React from 'react'
+import BankerApp from '../images/BankerApp.png'
 import ChessImg from '../images/HoveringOverPieces.jpeg'
 import Quarantine from '../images/Quarantine.png'
 import Profile from '../images/profile.jpg'
@@ -245,6 +246,29 @@ function Home({ scroll }) {
               <Card>
                 <Wrapper>
                   <Info position="left">
+                    <Title>Banker</Title>
+                    <Description>
+                      Usually at the end of each month, I will scramble to go
+                      through all my bank charges throughout the last month but
+                      it can be hard checking each transaction, especially with
+                      their confusing descriptions. I hope to solve this problem
+                      by creating notifications everytime someone makes a
+                      payment to give them their own description and verify each
+                      of the payments.
+                    </Description>
+                    <Tools>
+                      <Tool>React Native</Tool>
+                      <Tool>SpringBoot</Tool>
+                      <Tool>MySQL</Tool>
+                      <Tool>Plaid API</Tool>
+                    </Tools>
+                  </Info>
+                  <Image src={BankerApp} alt="BankerApp"></Image>
+                </Wrapper>
+              </Card>
+              <Card>
+                <Wrapper>
+                  <Info position="left">
                     <Title>Chess</Title>
                     <Description>
                       Designed a chess game using Java and JFrame that allows
@@ -260,28 +284,6 @@ function Home({ scroll }) {
                     </Tools>
                   </Info>
                   <Image src={ChessImg} alt="chess"></Image>
-                </Wrapper>
-              </Card>
-              <Card>
-                <Wrapper>
-                  <Info position="left">
-                    <Title>Quarantine</Title>
-                    <Description>
-                      Created this game that is similar to Call of Duty zombies.
-                      Programmed a singleton instance of the player and created
-                      a UI to display the player instance’s metrics such as a
-                      health bar, ammo capacity, and money. Designed and created
-                      the level design and game layout for the player and zombie
-                      models to navigate and interact to update metrics such as
-                      health points and ammo count.
-                    </Description>
-                    <Tools>
-                      <Tool>C#</Tool>
-                      <Tool>Unity</Tool>
-                      <Tool>Singleton</Tool>
-                    </Tools>
-                  </Info>
-                  <Image src={Quarantine} alt="quarantine"></Image>
                 </Wrapper>
               </Card>
             </Section>
