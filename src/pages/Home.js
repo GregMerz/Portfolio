@@ -85,9 +85,10 @@ function Home({ scroll }) {
                       about the inner workings of technology which has led to my
                       interest in designing webpages.
                       <br />
-                      <br />I am interested in the software engineering
-                      opportunities in the healthcare sector so please feel free
-                      to reach out!
+                      <br />
+                      Currently, I am at Caret Health as a full-stack software
+                      engineer which provides healthcare services to
+                      organizations dealing with high-risk patients.
                     </About>
 
                     <Skills>
