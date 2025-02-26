@@ -19,18 +19,19 @@ import {
   Skill,
   Section,
   Headshot,
-} from './HomeElements'
+} from "./HomeElements";
 
-import { Span } from '../components/Navbar/NavbarElements.js'
-import React from 'react'
-import BankerApp from '../images/BankerApp.png'
-import ChessImg from '../images/HoveringOverPieces.jpeg'
-import Quarantine from '../images/Quarantine.png'
-import Profile from '../images/profile.jpg'
-import WalnutLogo from '../images/WalnutLogo.jpg'
-import WalnutMeetup from '../images/WalnutMeetup.png'
-import SDSUAILab from '../images/SDSUAILab.png'
-import BuildingWebpage from '../images/BuildingWebpage.jpeg'
+import { Span } from "../components/Navbar/NavbarElements.js";
+import React from "react";
+import BankerApp from "../images/BankerApp.png";
+import ChessImg from "../images/HoveringOverPieces.jpeg";
+import Quarantine from "../images/Quarantine.png";
+import Profile from "../images/profile.jpg";
+import WalnutLogo from "../images/WalnutLogo.jpg";
+import CaretHealthLogo from "../images/caret_logo.svg";
+import WalnutMeetup from "../images/WalnutMeetup.png";
+import SDSUAILab from "../images/SDSUAILab.png";
+import BuildingWebpage from "../images/BuildingWebpage.jpeg";
 
 function Home({ scroll }) {
   return (
@@ -66,7 +67,7 @@ function Home({ scroll }) {
         </Content>
       </Page> */}
 
-      <Page id="about" num_pages={'auto'}>
+      <Page id="about" num_pages={"auto"}>
         <Content>
           <Container>
             <Section size="1240">
@@ -77,32 +78,27 @@ function Home({ scroll }) {
                       <Span>01</Span>About
                     </Header>
                     <About>
-                      Hello everyone! My name is Greg and I am a new grad
-                      software engineer based in the Bay Area. My love for
-                      coding began when I started my first project where I was
-                      learning how to rendering 3D graphics. This marked the
-                      first milestone of the possibilities of coding and
-                      introduced me to the behind the scenes of how applications
-                      are made. I have always been curious to learn about the
-                      inner workings of technology which has led to my interest
-                      in learning how webpages function and how they are
-                      designed.
+                      Hello everyone! My name is Greg and I am a Software
+                      Engineer based in the Bay Area. My love for coding began
+                      when I started my first project where I was learning how
+                      to render 3D graphics. I have always been curious to learn
+                      about the inner workings of technology which has led to my
+                      interest in designing webpages.
                       <br />
-                      <br />
-                      Currently, I am looking for new software engineering
-                      opportunities and am able to work from San Francisco or
-                      Seattle.
+                      <br />I am interested in the software engineering
+                      opportunities in the healthcare sector so please feel free
+                      to reach out!
                     </About>
 
                     <Skills>
                       <Skill>
-                        Languages: Java, Javascript, Python, C++, C#, C
+                        Languages: Java, Typescript, Python, HTML/CSS, SQL
                       </Skill>
                       <Skill>
                         Frontend Tools: React (Native), Next.js, Node.js
                       </Skill>
                       <Skill>
-                        Backend Tools: Spring Boot, MySQL, MongoDB, Stripe, AWS
+                        Backend Tools: Spring Boot, Nest.js, MySQL, MongoDB
                       </Skill>
                     </Skills>
                   </Bio>
@@ -118,7 +114,7 @@ function Home({ scroll }) {
         </Content>
       </Page>
 
-      <Page id="experience" num_pages={'auto'}>
+      <Page id="experience" num_pages={"auto"}>
         <Content>
           <Container>
             <Section size="1350">
@@ -128,6 +124,56 @@ function Home({ scroll }) {
               <Card>
                 <Wrapper>
                   <Info position="left">
+                    <Title>
+                      Caret Health
+                      <p
+                        style={{
+                          fontSize: `1rem`,
+                          fontWeight: `normal`,
+                          marginBlock: `.5rem`,
+                        }}
+                      >
+                        May 2024 - Present
+                      </p>
+                    </Title>
+                    <Description>
+                      <ul
+                        style={{
+                          padding: `0`,
+                          fontSize: `1.125rem`,
+                        }}
+                      >
+                        <li>
+                          Extended widget for viewing high-risk patients' vital
+                          submissions by displaying graphs with future trends in
+                          patient engagement
+                        </li>
+                        <li>
+                          Created Python script to pull and transform analytical
+                          data on triage agents to extrapolate activity and
+                          productivity statistics
+                        </li>
+                        <li>
+                          Increased task completion for triage agents by 32% by
+                          building a performance management dashboard for
+                          managers to plan weekly task distribution
+                        </li>
+                      </ul>
+                    </Description>
+                    <Tools>
+                      <Tool>Typescript</Tool>
+                      <Tool>React</Tool>
+                      <Tool>Nest.js</Tool>
+                      <Tool>MySQL</Tool>
+                    </Tools>
+                  </Info>
+                  <Image src={CaretHealthLogo} alt="SdsuAILab"></Image>
+                </Wrapper>
+              </Card>
+              <Card>
+                <Wrapper>
+                  <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
+                  <Info position="right">
                     <Title>
                       Walnut
                       {/* <img src={WalnutLogo} alt="Walnut" /> */}
@@ -183,7 +229,6 @@ function Home({ scroll }) {
                       <Tool>Next.js</Tool>
                     </Tools>
                   </Info>
-                  <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
                 </Wrapper>
               </Card>
               <Card>
@@ -236,7 +281,7 @@ function Home({ scroll }) {
         </Content>
       </Page>
 
-      <Page id="projects" num_pages={'auto'}>
+      <Page id="projects" num_pages={"auto"}>
         <Content>
           <Container>
             <Section size="1350">
@@ -268,7 +313,8 @@ function Home({ scroll }) {
               </Card>
               <Card>
                 <Wrapper>
-                  <Info position="left">
+                  <Image src={ChessImg} alt="chess"></Image>
+                  <Info position="right">
                     <Title>Chess</Title>
                     <Description>
                       Designed a chess game using Java and JFrame that allows
@@ -283,7 +329,6 @@ function Home({ scroll }) {
                       <Tool>RESTful API</Tool>
                     </Tools>
                   </Info>
-                  <Image src={ChessImg} alt="chess"></Image>
                 </Wrapper>
               </Card>
             </Section>
@@ -291,7 +336,7 @@ function Home({ scroll }) {
         </Content>
       </Page>
     </Homepage>
-  )
+  );
 }
 
-export default Home
+export default Home;
