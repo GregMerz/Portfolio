@@ -173,8 +173,7 @@ function Home({ scroll }) {
               </Card>
               <Card>
                 <Wrapper>
-                  <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
-                  <Info position="right">
+                  <Info position="left">
                     <Title>
                       Walnut
                       {/* <img src={WalnutLogo} alt="Walnut" /> */}
@@ -230,6 +229,7 @@ function Home({ scroll }) {
                       <Tool>Next.js</Tool>
                     </Tools>
                   </Info>
+                  <Image src={WalnutMeetup} alt="WalnutMeetup"></Image>
                 </Wrapper>
               </Card>
               <Card>
@@ -314,8 +314,7 @@ function Home({ scroll }) {
               </Card>
               <Card>
                 <Wrapper>
-                  <Image src={ChessImg} alt="chess"></Image>
-                  <Info position="right">
+                  <Info position="left">
                     <Title>Chess</Title>
                     <Description>
                       Designed a chess game using Java and JFrame that allows
@@ -330,6 +329,7 @@ function Home({ scroll }) {
                       <Tool>RESTful API</Tool>
                     </Tools>
                   </Info>
+                  <Image src={ChessImg} alt="chess"></Image>
                 </Wrapper>
               </Card>
             </Section>
